@@ -79,8 +79,7 @@ Vision Menu:
 
 Clantag menu:
 -{Ky}
--{@@}
+-Unbound ({@@})
 -{7s}
 -{HI}
 -FUCK
--Unbound
