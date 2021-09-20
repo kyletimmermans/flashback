@@ -4,7 +4,7 @@ MW2 Mod Menu with a button bind era look
 To keep in mind:
 -Red text base, green select, cyan menu select (or black base?)
 -Remove xbox button codes and replace with PC
--TU6
+-TU6?
 -Pretty sure only a limited amount of lines per menu, use "More" line?
 -https://www.youtube.com/watch?v=qippuizZnYY
 
@@ -74,6 +74,11 @@ Map menu:
 
 Vision Menu:
 -test
+
+Player menu:
+-kick players
+-kill all
+-freeze players
 
 Clantag menu:
 -{Ky}
