@@ -59,7 +59,6 @@ Fun Menu:
 -UFO
 -Money effect
 -Big XP
--Low gravity
 -Text on screen for lobby
 -Show dev sphere
 
