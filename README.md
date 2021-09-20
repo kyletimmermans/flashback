@@ -81,3 +81,4 @@ Clantag menu:
 -{7s}
 -{HI}
 -FUCK
+-Coww
