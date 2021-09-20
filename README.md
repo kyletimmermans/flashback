@@ -16,7 +16,6 @@ Unlock menu:
 -Level 70
 -Insane leaderboard stats
 -Set insane accolades
--Spinning 10th prestige emblem
 -Colored class names
 
 Prestige menu:
