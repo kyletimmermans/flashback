@@ -4,7 +4,7 @@ MW2 Mod Menu with a button bind era look
 Mw2 menu (TU6?) - Look at Kbrizzle tree patch
 
 Red text base,
-Green select
+Green select, cyan menu select
 
 
 Unlock menu:
