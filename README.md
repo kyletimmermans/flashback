@@ -8,6 +8,8 @@ Green select, cyan menu select
 
 Remove xbox button codes and replace with PC
 
+TU6
+
 
 Unlock menu:
 -Unlock all
