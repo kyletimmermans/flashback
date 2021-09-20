@@ -1,14 +1,12 @@
 # flashback
 MW2 Mod Menu with a button bind era look
 
-Mw2 menu (TU6?) - Look at Kbrizzle tree patch
-
-Red text base,
-Green select, cyan menu select
-
-Remove xbox button codes and replace with PC
-
-TU6
+To keep in mind:
+-Red text base, green select, cyan menu select (or black base?)
+-Remove xbox button codes and replace with PC
+-TU6
+-Pretty sure only a limited amount of lines per menu, use "More" line?
+-https://www.youtube.com/watch?v=qippuizZnYY
 
 
 Unlock menu:
