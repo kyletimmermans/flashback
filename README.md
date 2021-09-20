@@ -7,7 +7,7 @@ To keep in mind:
 -TU6?
 -Pretty sure only a limited amount of lines per menu, use "More" line?
 -https://www.youtube.com/watch?v=qippuizZnYY
-
+-Put _missions.gsc back into patch_mp.ff
 
 Unlock menu:
 -Unlock all
