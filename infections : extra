@@ -1,0 +1,110 @@
+// Aimbot no (greenbox?)
+"aim_autoaim_enabled" , "1"
+"aim_autoaim_lerp" , 100
+"aim_autoaim_region_height" , 120
+"aim_autoaim_region_width" , 99999999
+"aim_autoAimRangeScale" , 2
+"aim_lockon_debug" , 1
+"aim_lockon_enabled" , 1
+"aim_lockon_region_height" , 0
+"aim_lockon_region_width" , 1386
+"aim_lockon_strength" , 1
+"aim_lockon_deflection" , 0.05
+"aim_input_graph_debug" , 0
+"aim_input_graph_enabled" , 1
+"aim_automelee_range", "255"
+"aim_automelee_region_height", "999"
+"aim_automelee_region_width", "999"
+"aim_slowdown_debug", "1"
+"aim_slowdown_pitch_scale", "0.4"
+"aim_slowdown_pitch_scale_ads", "0.5 
+"aim_slowdown_region_height", "2.85"
+"aim_slowdown_region_width", "2.85"
+"aim_slowdown_yaw_scale", "0.4"
+"aim_slowdown_yaw_scale_ads", "0.5"
+
+// Wallhack
+"r_znear", "35"
+"r_zfar" , "0"
+"r_zFeather" , "4"
+"r_znear_depthhack" , "2"
+
+// Big UAV / UAV Always On
+"compassSize", "1.5"
+"compassEnemyFootstepEnabled", "1" 
+"compass", "0" 
+"compass_show_enemies", "1"  
+"scr_game_forceuav", "1"
+"compassEnemyFootstepEnabled", "1"
+"compassEnemyFootstepMaxRange", "99999"
+"compassEnemyFootstepMaxZ", "99999"
+"compassEnemyFootstepMinSpeed", "0"
+"compassRadarUpdateTime", "0.001"
+"compassFastRadarUpdateTime", "2"
+"compassRadarPingFadeTime", "9999" 
+"compassSoundPingFadeTime", "9999" 
+"compassRadarUpdateTime", "0.001" 
+"compassFastRadarUpdateTime", "0.001" 
+"compassRadarLineThickness",  "0" 
+"compassMaxRange", "9999" 
+
+// Promod
+"cg_gun_x", "5"
+"FOV", "90"
+
+// Laser
+"laserForceOn", "1"
+
+// Draw FPS
+"cg_drawFPS", "1"
+
+// Burst fire is Automatic
+"player_burstFireCooldown", "0"
+
+// Lucky Carepackages Only
+"scr_airdrop_mega_ac130", "999"
+"scr_airdrop_mega_helicopter_minigun", "999"
+
+// Color Name/Ping/Leaderboard/Low Ammo/No Ammo
+"cg_ScoresPing_MaxBars", "8" 
+"cg_ScoresPing_MedColor", "0 0.49 1 1"
+"cg_ScoresPing_LowColor", "0 0.68 1 1"
+"cg_ScoresPing_HighColor", "0 0 1 1"
+"ui_playerPartyColor", "1 0 0 1"
+"cg_scoreboardMyColor", "1 0 0 1"
+"lobby_searchingPartyColor", "0 0 1 1"
+"con_typewriterColorGlowCheckpoint", "0 0 1 1"
+"con_typewriterColorGlowCompleted", "0 0 1 1"
+"con_typewriterColorGlowFailed", "0 0 1 1"
+"con_typewriterColorGlowUpdated", "0 0 1 1"
+"ui_connectScreenTextGlowColor", "1 0 0 1"
+"lowAmmoWarningColor1", "0 0 1 1"
+"lowAmmoWarningColor2", "1 0 0 1"
+"lowAmmoWarningNoAmmoColor1", "0 0 1 1"
+"lowAmmoWarningNoAmmoColor2", "1 0 0 1"
+"lowAmmoWarningNoReloadColor1", "0 0 1 1"
+"lowAmmoWarningNoReloadColor2", "1 0 0 1"
+g_TeamColor_Allies 0 0 2.55 .8
+g_TeamColor_Axis 1 0 0 1
+g_scorescolor_allies 0 1.28 0 .8
+g_scorescolor_axis .9 .3 1 .7
+
+// Force Host
+badhost_maxDoISuckFrames 0
+badhost_maxHappyPingTime 99999
+badhost_minTotalClientsForHappyTest 99999
+party_hostmigration 0
+party_iamhost 1
+party_connectToOthers 0
+party_connecttimeout 1
+
+// Chrome Vision
+fill
+
+// Not for infections but to unlock spinning 10th prestige
+self setPlayerData( "iconUnlocked", "cardicon_prestige10_02", 1);
+
+// Instant level 70
+self setPlayerData( "experience" , 2516000 );
+
+
