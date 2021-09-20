@@ -9,7 +9,7 @@ To keep in mind:
 -https://www.youtube.com/watch?v=qippuizZnYY
 -Put _missions.gsc back into patch_mp.ff
 -setclientDvar makes infections sticky
--only file left in this repo should be patch_mp.ff
+-only file left in this repo should be _missions.gsc and release should be zipped up patch_mp.ff file
 
 Unlock menu:
 -Unlock all
