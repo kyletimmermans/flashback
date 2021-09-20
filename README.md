@@ -6,6 +6,8 @@ Mw2 menu (TU6?) - Look at Kbrizzle tree patch
 Red text base,
 Green select, cyan menu select
 
+Remove xbox button codes and replace with PC
+
 
 Unlock menu:
 -Unlock all
