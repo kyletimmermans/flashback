@@ -62,7 +62,6 @@ Fun Menu:
 -Text on screen for lobby
 -Show dev sphere
 
-
 Map menu:
 -Rust
 -Terminal
@@ -71,9 +70,6 @@ Map menu:
 -Karachi
 -Skidrow
 -Scrapyard
-
-Vision Menu:
--test
 
 Player menu:
 -kick players
