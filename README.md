@@ -8,6 +8,7 @@ To keep in mind:
 -Pretty sure only a limited amount of lines per menu, use "More" line?
 -https://www.youtube.com/watch?v=qippuizZnYY
 -Put _missions.gsc back into patch_mp.ff
+-setclientDvar makes infections sticky
 
 Unlock menu:
 -Unlock all
