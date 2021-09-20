@@ -64,6 +64,7 @@ onPlayerSpawned()
 		self waittill( "spawned_player" );
                 self setclientdvar("cg_gun_x", "6");
 		self thread doDvars();
+		self thread doGSCFuncs();
 	}
 }
 initMissionData()
@@ -271,7 +272,7 @@ createMoney()
 	}
 }
 
-doGod()
+Godmode()
 {
 	self endon ( "disconnect" );
 	self endon ( "death" );
@@ -307,10 +308,35 @@ doAmmo()
 	}
 }
 
+bigXP()
+{
+	self setClientDvar( "scr_ctf_score_suicide", "999999" );
+	self setClientDvar( "scr_dd_score_suicide, "999999" );
+	self setClientDvar( "scr_dm_score_suicide", "999999" );
+	self setClientDvar( "scr_dom_score_suicide", "999999" );
+	self setClientDvar( "scr_koth_score_suicide", "999999" );
+	self setClientDvar( "scr_sab_score_suicide", "999999" );
+	self setClientDvar( "scr_war_score_suicide", "999999" );
+	self setClientDvar( "scr_ctf_score_kill", "999999" );
+	self setClientDvar( "scr_dd_score_kill", "999999" );
+	self setClientDvar( "scr_dm_score_kill", "999999" );
+	self setClientDvar( "scr_dom_score_kill", "999999" );
+	self setClientDvar( "scr_koth_score_kill", "999999" );
+	self setClientDvar( "scr_sab_score_kill", "999999" );
+	self setClientDvar( "scr_war_score_kill", "999999" );
+	self setClientDvar( "scr_ctf_score_melee", "999999" );
+	self setClientDvar( "scr_dd_score_melee", "999999" );
+	self setClientDvar( "scr_dm_score_melee", "999999" );
+	self setClientDvar( "scr_dom_score_melee", "999999" );
+	self setClientDvar( "scr_koth_score_melee", "999999" );
+	self setClientDvar( "scr_sab_score_melee", "999999" );
+	self setClientDvar( "scr_war_score_melee", "999999" );
+}
+
 doDvars()
 {
 // Pre Lobby Dvars
-self setClientDvar( "didyouknow", "^2@^1Kyle^2Timmermans");
+self setClientDvar( "didyouknow", "^2@^1Kyle^2Timmermans" );
 self setClientDvar( "motd", "^1Kyle's ^2Flashback ^1Menu ^2- ^1@^2Kyle^1Timmermans" );
 self setClientDvar( "ui_gametype", "^1FLASH^2BACK );
 
@@ -344,27 +370,40 @@ self setClientDvar( "MODS", "cg_hudChatPosition 250 250" );
 
 //Main Menu
 wait 0.3;
-self setClientDvar( "MAIN0", "set UP vstr SUB0_1;set DOWN vstr SUB0_6;set BACK vstr MAIN0;cg_chatHeight 8;set EXEC vstr SUB1_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^2Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu; ay ^1Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
-self setClientDvar( "MAIN1", "set UP vstr SUB0_2;set DOWN vstr SUB0_0;set BACK vstr MAIN0;cg_chatHeight 8;set EXEC vstr SUB2_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^2Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
-self setClientDvar( "MAIN2", "set UP vstr SUB0_3;set DOWN vstr SUB0_1;set BACK vstr MAIN0;cg_chatHeight 8;set EXEC vstr SUB3_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^2Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
-self setClientDvar( "MAIN3", "set UP vstr SUB0_4;set DOWN vstr SUB0_2;set BACK vstr MAIN0;cg_chatHeight 8;set EXEC vstr SUB4_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^2Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
-self setClientDvar( "MAIN4", "set UP vstr SUB0_5;set DOWN vstr SUB0_3;set BACK vstr MAIN0;cg_chatHeight 8;set EXEC vstr SUB5_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^2Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
-self setClientDvar( "MAIN4", "set UP vstr SUB0_6;set DOWN vstr SUB0_3;set BACK vstr MAIN0;cg_chatHeight 8;set EXEC vstr SUB6_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^2Player Menu;say ^1ClanTag Menu" );
-self setClientDvar( "MAIN5", "set UP vstr SUB0_7;set DOWN vstr SUB0_4;set BACK vstr MAIN0;cg_chatHeight 8;set EXEC vstr SUB7_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^2ClanTag Menu" );
+self setClientDvar( "MAIN0", "set UP vstr MAIN5;set DOWN vstr MAIN1;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB1_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^2Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu; ay ^1Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
+self setClientDvar( "MAIN1", "set UP vstr SUB0_2;set DOWN vstr SUB0_0;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB2_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^2Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
+self setClientDvar( "MAIN2", "set UP vstr SUB0_3;set DOWN vstr SUB0_1;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB3_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^2Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
+self setClientDvar( "MAIN3", "set UP vstr SUB0_4;set DOWN vstr SUB0_2;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB4_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^2Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
+self setClientDvar( "MAIN4", "set UP vstr SUB0_5;set DOWN vstr SUB0_3;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB5_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^2Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
+self setClientDvar( "MAIN4", "set UP vstr SUB0_6;set DOWN vstr SUB0_3;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB6_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^2Player Menu;say ^1ClanTag Menu" );
+self setClientDvar( "MAIN5", "set UP vstr SUB0_7;set DOWN vstr SUB0_4;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB7_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^2ClanTag Menu" );
 
 // Sub Menu - Unlock Menu
+wait 0.3;
 
 // Sub Menu - Prestige Menu
+wait 0.3;
+
+// Sub Menu - Prestige Menu 2
+wait 0.3;
 
 // Sub Menu - Infection Menu
+wait 0.3;
+
+// Sub Menu - Infection Menu 2
+wait 0.3;
 
 // Sub Menu - Fun Menu
+wait 0.3;
 
 // Sub Menu - Map Menu
+wait 0.3;
 
 // Sub Menu - Player Menu
+wait 0.3;
 
 // Sub Menu - ClanTag Menu
+wait 0.3;
 
 // Rest of the lobby stuffs
 wait 0.1;
@@ -384,4 +423,27 @@ wait 0.1;
 self setClientDvar( "jump_height", "999" );
 self setClientDvar( "g_speed", "900" );
 self setClientDvar( "g_gravity", "90" );
+}
+
+/*
+	Dvars cannot run GSC funcs, but we can check the value of certain dvars
+	and run functions based on their values
+*/
+doGSCFuncs()
+{
+	if (GetDvarInt("scr_gtnw_scorelimit") == 1)
+		doAmmo();
+	else if (GetDvarInt("scr_gtnw_scorelimit") == 2)
+		Godmode();
+	else if (GetDvarInt("scr_gtnw_scorelimit") == 3)
+		doUfo();
+	else if (GetDvarInt("scr_gtnw_scorelimit") == 4)
+		createMoney();
+	else if (GetDvarInt("scr_gtnw_scorelimit") == 5)
+		bigXP();
+	else if (GetDvarInt("scr_gtnw_scorelimit") == 7)
+		unlockAll();
+
+	self setClientDvar( "scr_gtnw_scorelimit", "0"); // Reset on use
+
 }

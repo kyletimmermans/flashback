@@ -1,4 +1,4 @@
-// Aimbot no (greenbox?)
+// Aimbot no (greenbox?) on off
 "aim_autoaim_enabled" , "1"
 "aim_autoaim_lerp" , 100
 "aim_autoaim_region_height" , 120
@@ -23,14 +23,23 @@
 "aim_slowdown_yaw_scale", "0.4"
 "aim_slowdown_yaw_scale_ads", "0.5"
 
-// Wallhack
+// Wallhack On
 "r_znear", "35"
 "r_zfar" , "0"
 "r_zFeather" , "4"
 "r_znear_depthhack" , "2"
 
-// Big UAV / UAV Always On
+// Wallhack Off
+"r_znear", "4"
+"r_zfar" , "0"
+"r_zFeather" , "1"
+r_znear_depthhack "0.1"
+
+
+// Big Minimap / Unlimited UAV
 "compassSize", "1.5"
+"g_compassshowenemies", "1"
+"ui_hud_hardcore", "1"
 "compassEnemyFootstepEnabled", "1" 
 "compass", "0" 
 "compass_show_enemies", "1"  
@@ -48,18 +57,31 @@
 "compassRadarLineThickness",  "0" 
 "compassMaxRange", "9999" 
 
-// Promod
+// Promod On
 "cg_gun_x", "5"
-"FOV", "90"
+"cg_fov", "90"
 
-// Laser
+// Promod Off
+cg_gun_x "0"
+cg_fov "65"
+
+// Laser On
 "laserForceOn", "1"
 
-// Draw FPS
+// Laser Off
+"laserForceOn", "0"
+
+// Draw FPS On
 "cg_drawFPS", "1"
 
-// Burst fire is Automatic
+// Draw FPS Off
+"cg_drawFPS", "0"
+
+// Automatic M16/Famas/Raffica On
 "player_burstFireCooldown", "0"
+
+// Automatic M16/Famas/Raffica Off
+"player_burstFireCooldown", "1"
 
 // Lucky Carepackages Only
 "scr_airdrop_mega_ac130", "999"
@@ -98,6 +120,17 @@ party_iamhost 1
 party_connectToOthers 0
 party_connecttimeout 1
 
+// Stun/Flash No Effect On
+"cg_drawShellshock" , "0"
+
+// Far Knife On
+perk_extendedMeleeRange "999"
+player_meleeRange "999"
+
+// Far Knife Off
+perk_extendedMeleeRange "176"
+player_meleeRange "64"
+
 // Chrome Vision
 fill
 
@@ -108,3 +141,8 @@ self setPlayerData( "iconUnlocked", "cardicon_prestige10_02", 1);
 self setPlayerData( "experience" , 2516000 );
 
 
+// Dev Sphere On
+self setClientDvar( "debug_reflection", "1" )
+
+// Dev Sphere Off
+self setClientDvar( "debug_reflection", "0" )
