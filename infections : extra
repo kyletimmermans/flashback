@@ -58,12 +58,12 @@ r_znear_depthhack "0.1"
 "compassMaxRange", "9999" 
 
 // Promod On
-"cg_gun_x", "4" // is this needed?
-"cg_fov", "90"
+"cg_gun_x", "4" // is this needed? 5 instead?
+"cg_fov", "80", toggle 80, 85, and 90
 
 // Promod Off
 cg_gun_x "0" // is this needed?
-cg_fov "65"
+cg_fov "65" // isn't 60 the default value?
 
 // Laser On
 "laserForceOn", "1"
