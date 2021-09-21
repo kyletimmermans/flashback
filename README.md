@@ -36,23 +36,22 @@ Prestige menu:
 
 Infections Menu (Toggle On/Off):
 - [ ] Aimbot - red squares (no green square? What does it do?)
-- [ ] UAV always on
-- [ ] Big UAV
-- [ ] Far knife
 - [ ] Wallhack
+- [ ] Big Minimap / UAV Always On 
+- [ ] Laser
+- [ ] Far knife
+- [ ] Show FPS
+- [ ] Promod
 - [ ] Burst guns are automatic
 - [ ] Ping color
 - [ ] Leaderboard color
 - [ ] Gamertag color in lobby and leaderboard
-- [ ] Show FPS
 - [ ] No stun / flash effect
-- [ ] Pro mod - 4? 5?
 - [ ] Chrome vision
 - [ ] No ammo / low ammo color text
 - [ ] Instant reload w/ sleight of hand
 - [ ] Small crosshair w/ steady aim
 - [ ] Force Host
-- [ ] Laser
 - [ ] Chopper Gunner and AC130 in care packages only
 
 Fun Menu:
