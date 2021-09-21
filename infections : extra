@@ -58,11 +58,11 @@ r_znear_depthhack "0.1"
 "compassMaxRange", "9999" 
 
 // Promod On
-"cg_gun_x", "5"
+"cg_gun_x", "4" // is this needed?
 "cg_fov", "90"
 
 // Promod Off
-cg_gun_x "0"
+cg_gun_x "0" // is this needed?
 cg_fov "65"
 
 // Laser On
@@ -146,3 +146,6 @@ self setClientDvar( "debug_reflection", "1" )
 
 // Dev Sphere Off
 self setClientDvar( "debug_reflection", "0" )
+
+// Spawn finger gun (default weapon)
+scr_drop_weapon defaultweapon_mp

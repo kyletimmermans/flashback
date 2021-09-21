@@ -442,11 +442,12 @@ self setClientDvar( "MAIN5", "set UP vstr MAIN4;set DOWN vstr MAIN0;set BACK vst
 
 // Sub Menu - Unlock Menu
 wait 0.3;
-self setClientDvar( "SUB1_0", "set UP vstr SUB1_4;set DOWN vstr SUB1_1;set BACK vstr MAIN0;cg_chatHeight 6;set MSG scr_do_notify ^1Unlocking ^2All ^5Challenges;set EXEC scr_gtnw_scorelimit 6;say ^5Unlock Menu;say ^2Unlock All Challenges;say ^1Instant Level 70; say ^1Set Insane Leaderboard Stats;say ^1Set Insane Accolades;^1Colored Classes" );
-self setClientDvar( "SUB1_1", "set UP vstr SUB1_0;set DOWN vstr SUB1_2;set BACK vstr MAIN0;cg_chatHeight 6;set MSG scr_do_notify ^1Level ^2Set ^5to^1: ^270!;set EXEC scr_givexp 2156000;say ^5Unlock Menu;say ^1Unlock All Challenges;say ^2Instant Level 70; say ^1Set Insane Leaderboard Stats;say ^1Set Insane Accolades;^1Colored Classes" );
-self setClientDvar( "SUB1_2", "set UP vstr SUB1_1;set DOWN vstr SUB1_3;set BACK vstr MAIN0;cg_chatHeight 6;set MSG scr_do_notify ^1Insane ^2Stats ^5Set!;set EXEC scr_gtnw_scorelimit 8;say ^5Unlock Menu;say ^1Unlock All Challenges;say ^1Instant Level 70; say ^2Set Insane Leaderboard Stats;say ^1Set Insane Accolades;^1Colored Classes" );
-self setClientDvar( "SUB1_3", "set UP vstr SUB1_2;set DOWN vstr SUB1_4;set BACK vstr MAIN0;cg_chatHeight 6;set MSG scr_do_notify ^1Insane ^2Accolades ^5Set!;set EXEC scr_gtnw_scorelimit 9;say ^5Unlock Menu;say ^1Unlock All Challenges;say ^1Instant Level 70; say ^1Set Insane Leaderboard Stats;say ^2Set Insane Accolades;^1Colored Classes" );
-self setClientDvar( "SUB1_4", "set UP vstr SUB1_3;set DOWN vstr SUB1_0;set BACK vstr MAIN0;cg_chatHeight 6;set MSG scr_do_notify ^1C^2o^3l^4o^5r^6e^1d ^2C^3l^4a^5s^6s^1e^2s ^3S^4e^5t^6!;set EXEC scr_gtnw_scorelimit 7;say ^5Unlock Menu;say ^1Unlock All Challenges;say ^1Instant Level 70; say ^1Set Insane Leaderboard Stats;say ^1Set Insane Accolades;^2Colored Classes" );
+self setClientDvar( "SUB1_0", "set UP vstr SUB1_4;set DOWN vstr SUB1_1;set BACK vstr MAIN0;cg_chatHeight 7;set MSG scr_do_notify ^1Unlocking ^2All ^5Challenges;set EXEC scr_gtnw_scorelimit 6;say ^5Unlock Menu;say ^2Unlock All Challenges;say ^1Instant Level 70; say ^1Set Insane Leaderboard Stats;say ^1Set Insane Accolades;^1Colored Classes;say ^1Big XP Lobby" );
+self setClientDvar( "SUB1_1", "set UP vstr SUB1_0;set DOWN vstr SUB1_2;set BACK vstr MAIN0;cg_chatHeight 7;set MSG scr_do_notify ^1Level ^2Set ^5to^1: ^270!;set EXEC scr_givexp 2156000;say ^5Unlock Menu;say ^1Unlock All Challenges;say ^2Instant Level 70; say ^1Set Insane Leaderboard Stats;say ^1Set Insane Accolades;^1Colored Classes;say ^1Big XP Lobby" );
+self setClientDvar( "SUB1_2", "set UP vstr SUB1_1;set DOWN vstr SUB1_3;set BACK vstr MAIN0;cg_chatHeight 7;set MSG scr_do_notify ^1Insane ^2Stats ^5Set!;set EXEC scr_gtnw_scorelimit 8;say ^5Unlock Menu;say ^1Unlock All Challenges;say ^1Instant Level 70; say ^2Set Insane Leaderboard Stats;say ^1Set Insane Accolades;^1Colored Classes;say ^1Big XP Lobby" );
+self setClientDvar( "SUB1_3", "set UP vstr SUB1_2;set DOWN vstr SUB1_4;set BACK vstr MAIN0;cg_chatHeight 7;set MSG scr_do_notify ^1Insane ^2Accolades ^5Set!;set EXEC scr_gtnw_scorelimit 9;say ^5Unlock Menu;say ^1Unlock All Challenges;say ^1Instant Level 70; say ^1Set Insane Leaderboard Stats;say ^2Set Insane Accolades;^1Colored Classes;say ^1Big XP Lobby" );
+self setClientDvar( "SUB1_4", "set UP vstr SUB1_3;set DOWN vstr SUB1_5;set BACK vstr MAIN0;cg_chatHeight 7;set MSG scr_do_notify ^1C^2o^3l^4o^5r^6e^1d ^2C^3l^4a^5s^6s^1e^2s ^3S^4e^5t^6!;set EXEC scr_gtnw_scorelimit 7;say ^5Unlock Menu;say ^1Unlock All Challenges;say ^1Instant Level 70; say ^1Set Insane Leaderboard Stats;say ^1Set Insane Accolades;^2Colored Classes;say ^1Big XP Lobby" );
+self setClientDvar( "SUB1_5", "set UP vstr SUB1_4;set DOWN vstr SUB1_0;set BACK vstr MAIN0;cg_chatHeight 7;set MSG scr_do_notify ^1Big ^2XP ^5Lobby ^1Set!;set EXEC scr_gtnw_scorelimit 5;say ^5Unlock Menu;say ^1Unlock All Challenges;say ^1Instant Level 70; say ^1Set Insane Leaderboard Stats;say ^1Set Insane Accolades;^1Colored Classes;say ^2Big XP Lobby" );
 
 // Sub Menu - Prestige Menu
 wait 0.3;
@@ -474,6 +475,15 @@ SUB5_0
 // Sub Menu - Player Menu
 wait 0.3;
 SUB6_0
+
+// Kick Menu (Players 0-6)
+wait 0.3;
+
+// Kick Menu (Players 7-14)
+wait 0.3;
+
+// Kick Menu (Players 15-18)
+wait 0.3;
 
 // Sub Menu - ClanTag Menu
 wait 0.3;
