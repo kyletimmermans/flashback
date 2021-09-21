@@ -60,9 +60,10 @@ Fun Menu:
 -Godmode
 -UFO
 -Money effect
--Big XP
+-Big XP (Put this in the extra dvars so we can have fingergun?
 -Text on screen for lobby
 -Show dev sphere
+-Spawn finger gun (default weapon)?? not enough space
 
 Map menu:
 -Rust
