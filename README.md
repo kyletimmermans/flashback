@@ -2,23 +2,23 @@
 MW2 Mod Menu with a button bind era look and implementation
 
 To keep in mind:
-- [ ] Red text base, green select, cyan menu select (or black base?)
+- [x] Red text base, green select, cyan menu select (or black base?)
 - [ ] Remove xbox button codes and replace with PC
 - [ ] TU6?
-- [ ] Pretty sure only a limited amount of lines per menu, use "More" line?
-- [ ] https://www.youtube.com/watch?v=qippuizZnYY
+- [x] Pretty sure only a limited amount of lines per menu (8), use "More" line?
+- [x] https://www.youtube.com/watch?v=qippuizZnYY
 - [ ] Put _missions.gsc back into patch_mp.ff
-- [ ] setclientDvar makes infections sticky
+- [x] setclientDvar makes infections sticky
 - [ ] only file left in this repo should be _missions.gsc and release should be zipped up patch_mp.ff file
 - [ ] Couldn't have done this without ImACoww from TheTechGame, his Infectable v3 menu is the base / inspiration of my menu
 
 Unlock menu:
-- [ ] Unlock all
-- [ ] Level 70
-- [ ] Insane leaderboard stats
-- [ ] Set insane accolades
-- [ ] Colored class names
-- [ ] Big XP Lobby
+- [x] Unlock all
+- [x] Level 70
+- [x] Insane leaderboard stats
+- [x] Set insane accolades
+- [x] Colored class names
+- [x] Big XP Lobby
 
 Prestige menu:
 - [ ] No prestige
