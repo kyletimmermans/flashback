@@ -19,6 +19,7 @@ Unlock menu:
 -Insane leaderboard stats
 -Set insane accolades
 -Colored class names
+-Big XP Lobby
 
 Prestige menu:
 -No prestige
@@ -59,25 +60,24 @@ Fun Menu:
 -Infinite ammo
 -Godmode
 -UFO
--Money effect
--Big XP (Put this in the extra dvars so we can have fingergun?
--Text on screen for lobby
--Show dev sphere
--Spawn finger gun (default weapon)?? not enough space
+-Raining Money
+-Message For Lobby
+-Show Dev Sphere
+-Spawn Finger Gun (Default Weapon)
 
 Map menu:
 -Rust
 -Terminal
--High rise
+-Highrise
 -Estate
 -Karachi
 -Skidrow
 -Scrapyard
 
 Player menu:
--kick players
--kill all
--freeze players
+-Kick Menu
+-Kill All
+-Freeze All
 
 Clantag menu:
 -{Ky}
