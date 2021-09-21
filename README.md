@@ -10,6 +10,8 @@ To keep in mind:
 -Put _missions.gsc back into patch_mp.ff
 -setclientDvar makes infections sticky
 -only file left in this repo should be _missions.gsc and release should be zipped up patch_mp.ff file
+-Couldn't have done this without ImaCoww from TheTechGame, his Infectable v3 menu is the base / inspiration
+of mine
 
 Unlock menu:
 -Unlock all
