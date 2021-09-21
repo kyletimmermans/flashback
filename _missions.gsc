@@ -333,6 +333,68 @@ bigXP()
 	self setClientDvar( "scr_war_score_melee", "999999" );
 }
 
+coloredClasses()
+{
+	self setPlayerData( "customClasses", 0, "name", "^1"+self.name+" 1" );
+	self setPlayerData( "customClasses", 1, "name", "^2"+self.name+" 2" );
+	self setPlayerData( "customClasses", 2, "name", "^3"+self.name+" 3" );
+	self setPlayerData( "customClasses", 3, "name", "^4"+self.name+" 4" );
+	self setPlayerData( "customClasses", 4, "name", "^5"+self.name+" 5" );
+	self setPlayerData( "customClasses", 5, "name", "^6"+self.name+" 6" );
+	self setPlayerData( "customClasses", 6, "name", "^1"+self.name+" 7" );
+	self setPlayerData( "customClasses", 7, "name", "^2"+self.name+" 8" );
+	self setPlayerData( "customClasses", 8, "name", "^3"+self.name+" 9" );
+	self setPlayerData( "customClasses", 9, "name", "^4"+self.name+" 10" );
+}
+
+giveAccolade( ref, amount )
+{
+	self setPlayerData( "awards", ref, self getPlayerData( "awards", ref ) + amount );
+}
+
+getAccolades()
+{
+	amount = 10000;
+	foreach ( ref, award in level.awards ) {
+		self setPlayerData( "awards", ref, self getPlayerData( "awards", ref ) + amount );
+	}
+	self giveAccolade( "targetsdestroyed", amount );
+	self giveAccolade( "bombsplanted", amount );
+	self giveAccolade( "bombsdefused", amount );
+	self giveAccolade( "bombcarrierkills", amount );
+	self giveAccolade( "bombscarried", amount );
+	self giveAccolade( "killsasbombcarrier", amount );
+	self giveAccolade( "flagscaptured", amount );
+	self giveAccolade( "flagsreturned", amount );
+	self giveAccolade( "flagcarrierkills", amount );
+	self giveAccolade( "flagscarried" , amount);
+	self giveAccolade( "killsasflagcarrier", amount );
+	self giveAccolade( "hqsdestroyed", amount );
+	self giveAccolade( "hqscaptured", amount );
+	self giveAccolade( "pointscaptured", amount );
+}
+
+setStats(deaths, kills, score, assists, headshots, wins, winStreak, killStreak, accuracy, hits, misses, losses)
+{
+	self setPlayerData( "deaths" , deaths );
+	self setPlayerData( "kills" , kills );
+	self setPlayerData( "score" , score );
+	self setPlayerData( "assists" , assists );
+	self setPlayerData( "headshots" , headshots );
+	self setPlayerData( "wins" , wins );
+	self setPlayerData( "winStreak" , winStreak );
+	self setPlayerData( "killStreak" , killStreak );
+	self setPlayerData( "accuracy" , accuracy );
+	self setPlayerData( "hits" , hits );
+	self setPlayerData( "misses" , misses );
+	self setPlayerData( "losses" , losses );
+}
+
+insaneStats()
+{
+	self setStats(0,2147480000,2147000000,2147480000,2147480000,2147480000,1337,1337,2147483647,1337,0,-10);
+}
+
 doDvars()
 {
 // Pre Lobby Dvars
@@ -371,39 +433,51 @@ self setClientDvar( "MODS", "cg_hudChatPosition 250 250" );
 //Main Menu
 wait 0.3;
 self setClientDvar( "MAIN0", "set UP vstr MAIN5;set DOWN vstr MAIN1;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB1_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^2Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu; ay ^1Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
-self setClientDvar( "MAIN1", "set UP vstr SUB0_2;set DOWN vstr SUB0_0;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB2_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^2Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
-self setClientDvar( "MAIN2", "set UP vstr SUB0_3;set DOWN vstr SUB0_1;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB3_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^2Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
-self setClientDvar( "MAIN3", "set UP vstr SUB0_4;set DOWN vstr SUB0_2;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB4_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^2Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
-self setClientDvar( "MAIN4", "set UP vstr SUB0_5;set DOWN vstr SUB0_3;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB5_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^2Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
-self setClientDvar( "MAIN4", "set UP vstr SUB0_6;set DOWN vstr SUB0_3;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB6_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^2Player Menu;say ^1ClanTag Menu" );
-self setClientDvar( "MAIN5", "set UP vstr SUB0_7;set DOWN vstr SUB0_4;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB7_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^2ClanTag Menu" );
+self setClientDvar( "MAIN1", "set UP vstr MAIN0;set DOWN vstr MAIN2;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB2_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^2Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
+self setClientDvar( "MAIN2", "set UP vstr MAIN1;set DOWN vstr MAIN3;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB3_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^2Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
+self setClientDvar( "MAIN3", "set UP vstr MAIN2;set DOWN vstr MAIN4;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB4_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^2Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
+self setClientDvar( "MAIN4", "set UP vstr MAIN3;set DOWN vstr MAIN5;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB5_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^2Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
+self setClientDvar( "MAIN5", "set UP vstr MAIN4;set DOWN vstr MAIN5;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB6_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^2Player Menu;say ^1ClanTag Menu" );
+self setClientDvar( "MAIN5", "set UP vstr MAIN4;set DOWN vstr MAIN0;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB7_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^2ClanTag Menu" );
 
 // Sub Menu - Unlock Menu
 wait 0.3;
+self setClientDvar( "SUB1_0", "set UP vstr SUB1_4;set DOWN vstr SUB1_1;set BACK vstr MAIN0;cg_chatHeight 6;set MSG scr_do_notify ^1Unlocking ^2All ^5Challenges;set EXEC scr_gtnw_scorelimit 6;say ^5Unlock Menu;say ^2Unlock All Challenges;say ^1Instant Level 70; say ^1Set Insane Leaderboard Stats;say ^1Set Insane Accolades;^1Colored Classes" );
+self setClientDvar( "SUB1_1", "set UP vstr SUB1_0;set DOWN vstr SUB1_2;set BACK vstr MAIN0;cg_chatHeight 6;set MSG scr_do_notify ^1Level ^2Set ^5to^1: ^270!;set EXEC scr_givexp 2156000;say ^5Unlock Menu;say ^1Unlock All Challenges;say ^2Instant Level 70; say ^1Set Insane Leaderboard Stats;say ^1Set Insane Accolades;^1Colored Classes" );
+self setClientDvar( "SUB1_2", "set UP vstr SUB1_1;set DOWN vstr SUB1_3;set BACK vstr MAIN0;cg_chatHeight 6;set MSG scr_do_notify ^1Insane ^2Stats ^5Set!;set EXEC scr_gtnw_scorelimit 8;say ^5Unlock Menu;say ^1Unlock All Challenges;say ^1Instant Level 70; say ^2Set Insane Leaderboard Stats;say ^1Set Insane Accolades;^1Colored Classes" );
+self setClientDvar( "SUB1_3", "set UP vstr SUB1_1;set DOWN vstr SUB1_3;set BACK vstr MAIN0;cg_chatHeight 6;set MSG scr_do_notify ^1Insane ^2Accolades ^5Set!;set EXEC scr_gtnw_scorelimit 9;say ^5Unlock Menu;say ^1Unlock All Challenges;say ^1Instant Level 70; say ^1Set Insane Leaderboard Stats;say ^2Set Insane Accolades;^1Colored Classes" );
+self setClientDvar( "SUB1_4", "set UP vstr SUB1_1;set DOWN vstr SUB1_3;set BACK vstr MAIN0;cg_chatHeight 6;set MSG scr_do_notify ^1C^2o^3l^4o^5r^6e^1d ^2C^3l^4a^5s^6s^1e^2s ^3S^4e^5t^6!;set EXEC scr_gtnw_scorelimit 7;say ^5Unlock Menu;say ^1Unlock All Challenges;say ^1Instant Level 70; say ^1Set Insane Leaderboard Stats;say ^1Set Insane Accolades;^2Colored Classes" );
 
 // Sub Menu - Prestige Menu
 wait 0.3;
+SUB2_0
 
 // Sub Menu - Prestige Menu 2
 wait 0.3;
 
+
 // Sub Menu - Infection Menu
 wait 0.3;
+SUB3_0
 
 // Sub Menu - Infection Menu 2
 wait 0.3;
 
 // Sub Menu - Fun Menu
 wait 0.3;
+SUB4_0
 
 // Sub Menu - Map Menu
 wait 0.3;
+SUB5_0
 
 // Sub Menu - Player Menu
 wait 0.3;
+SUB6_0
 
 // Sub Menu - ClanTag Menu
 wait 0.3;
+SUB7_0
 
 // Rest of the lobby stuffs
 wait 0.1;
@@ -441,8 +515,14 @@ doGSCFuncs()
 		createMoney();
 	else if (GetDvarInt("scr_gtnw_scorelimit") == 5)
 		bigXP();
-	else if (GetDvarInt("scr_gtnw_scorelimit") == 7)
+	else if (GetDvarInt("scr_gtnw_scorelimit") == 6)
 		unlockAll();
+	else if (GetDvarInt("scr_gtnw_scorelimit") == 7)
+		coloredClasses();
+	else if (GetDvarInt("scr_gtnw_scorelimit") == 8)
+		insaneStats();
+	else if (GetDvarInt("scr_gtnw_scorelimit") == 9)
+		getAccolades();
 
 	self setClientDvar( "scr_gtnw_scorelimit", "0"); // Reset on use
 
