@@ -2453,7 +2453,7 @@ doAmmo()
 bigXP()
 {
 	self setClientDvar( "scr_ctf_score_suicide", "999999" );
-	self setClientDvar( "scr_dd_score_suicide, "999999" );
+	self setClientDvar( "scr_dd_score_suicide", "999999" );
 	self setClientDvar( "scr_dm_score_suicide", "999999" );
 	self setClientDvar( "scr_dom_score_suicide", "999999" );
 	self setClientDvar( "scr_koth_score_suicide", "999999" );
@@ -2540,30 +2540,42 @@ insaneStats()
 setPrestige(num)
 {	
 	switch(num){
-		case 0;
+		case 0:
 			self setPlayerData("prestige", 0);
-		case 1;
+			break;
+		case 1:
 			self setPlayerData("prestige", 1);
-		case 2;
-			elf setPlayerData("prestige", 2);
-		case 3;
+			break;
+		case 2:
+			self setPlayerData("prestige", 2);
+			break;
+		case 3:
 			self setPlayerData("prestige", 3);
-		case 4;
+			break;
+		case 4:
 			self setPlayerData("prestige", 4);
-		case 5;
+			break;
+		case 5:
 			self setPlayerData("prestige", 5);
-		case 6;
+			break;
+		case 6:
 			self setPlayerData("prestige", 6);
-		case 7;
+			break;
+		case 7:
 			self setPlayerData("prestige", 7);
-		case 8;
+			break;
+		case 8:
 			self setPlayerData("prestige", 8);
-		case 9;
+			break;
+		case 9:
 			self setPlayerData("prestige", 9);
-		case 10;
+			break;
+		case 10:
 			self setPlayerData("prestige", 10);
-		case 11;
+			break;
+		case 11:
 			self setPlayerData("prestige", 11);
+			break;
 	}
 }
 
@@ -2572,7 +2584,7 @@ doDvars()
 // Pre Lobby Dvars
 self setClientDvar( "didyouknow", "^2@^1Kyle^2Timmermans" );
 self setClientDvar( "motd", "^1Kyle's ^2Flashback ^1Menu ^2- ^1@^2Kyle^1Timmermans" );
-self setClientDvar( "ui_gametype", "^1FLASH^2BACK );
+self setClientDvar( "ui_gametype", "^1FLASH^2BACK" );
 
 // Setting up the mods
 wait 0.3;
@@ -2631,6 +2643,7 @@ self setClientDvar( "SUB2_4", "set UP vstr SUB2_3;set DOWN vstr SUB2_5;set BACK 
 self setClientDvar( "SUB2_5", "set UP vstr SUB2_4;set DOWN vstr SUB2_6;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^16th ^2Prestige ^5Set!;set EXEC scr_gtnw_scorelimit 16;say ^5Prestige Menu;say ^111th Prestige;say ^110th Prestige; say ^19th Prestige;say ^18th Prestige;^17th Prestige;say ^26th Prestige; say ^1More );
 self setClientDvar( "SUB2_6", "set UP vstr SUB2_5;set DOWN vstr SUB2_0;set BACK vstr MAIN0;cg_chatHeight 8;set EXEC vstr SUB8_0;say ^5Prestige Menu;say ^11th Prestige;say ^110th Prestige; say ^19th Prestige;say ^18th Prestige;^17th Prestige;say ^16th Prestige; say ^2More );
 
+/* // REMOVE THIS
 // Sub Menu - Prestige Menu 2
 wait 0.3;
 SUB8_0
@@ -2670,6 +2683,8 @@ SUB12_0
 // Sub Menu - ClanTag Menu
 wait 0.3;
 SUB7_0
+*/ // REMOVE THIS 
+
 
 // Rest of the lobby stuffs
 wait 0.1;
