@@ -395,6 +395,36 @@ insaneStats()
 	self setStats(0,2147480000,2147000000,2147480000,2147480000,2147480000,1337,1337,2147483647,1337,0,-10);
 }
 
+setPrestige(num)
+{	
+	switch(num){
+		case 0;
+			self setPlayerData("prestige", 0);
+		case 1;
+			self setPlayerData("prestige", 1);
+		case 2;
+			elf setPlayerData("prestige", 2);
+		case 3;
+			self setPlayerData("prestige", 3);
+		case 4;
+			self setPlayerData("prestige", 4);
+		case 5;
+			self setPlayerData("prestige", 5);
+		case 6;
+			self setPlayerData("prestige", 6);
+		case 7;
+			self setPlayerData("prestige", 7);
+		case 8;
+			self setPlayerData("prestige", 8);
+		case 9;
+			self setPlayerData("prestige", 9);
+		case 10;
+			self setPlayerData("prestige", 10);
+		case 11;
+			self setPlayerData("prestige", 11);
+	}
+}
+
 doDvars()
 {
 // Pre Lobby Dvars
@@ -451,11 +481,17 @@ self setClientDvar( "SUB1_5", "set UP vstr SUB1_4;set DOWN vstr SUB1_0;set BACK 
 
 // Sub Menu - Prestige Menu
 wait 0.3;
-SUB2_0
+self setClientDvar( "SUB2_0", "set UP vstr SUB2_6;set DOWN vstr SUB2_1;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^111th ^2Prestige ^5Set!;set EXEC scr_gtnw_scorelimit 21;say ^5Prestige Menu;say ^211th Prestige;say ^110th Prestige; say ^19th Prestige;say ^18th Prestige;^17th Prestige;say ^16th Prestige; say ^1More );
+self setClientDvar( "SUB2_1", "set UP vstr SUB2_0;set DOWN vstr SUB2_2;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^101th ^2Prestige ^5Set!;set EXEC scr_gtnw_scorelimit 20;say ^5Prestige Menu;say ^111th Prestige;say ^210th Prestige; say ^19th Prestige;say ^18th Prestige;^17th Prestige;say ^16th Prestige; say ^1More );
+self setClientDvar( "SUB2_2", "set UP vstr SUB2_1;set DOWN vstr SUB2_3;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^91th ^2Prestige ^5Set!;set EXEC scr_gtnw_scorelimit 19;say ^5Prestige Menu;say ^111th Prestige;say ^110th Prestige; say ^29th Prestige;say ^18th Prestige;^17th Prestige;say ^16th Prestige; say ^1More );
+self setClientDvar( "SUB2_3", "set UP vstr SUB2_2;set DOWN vstr SUB2_4;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^18th ^2Prestige ^5Set!;set EXEC scr_gtnw_scorelimit 18;say ^5Prestige Menu;say ^111th Prestige;say ^110th Prestige; say ^19th Prestige;say ^28th Prestige;^17th Prestige;say ^16th Prestige; say ^1More );
+self setClientDvar( "SUB2_4", "set UP vstr SUB2_3;set DOWN vstr SUB2_5;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^17th ^2Prestige ^5Set!;set EXEC scr_gtnw_scorelimit 17;say ^5Prestige Menu;say ^111th Prestige;say ^110th Prestige; say ^19th Prestige;say ^18th Prestige;^27th Prestige;say ^16th Prestige; say ^1More );
+self setClientDvar( "SUB2_5", "set UP vstr SUB2_4;set DOWN vstr SUB2_6;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^16th ^2Prestige ^5Set!;set EXEC scr_gtnw_scorelimit 16;say ^5Prestige Menu;say ^111th Prestige;say ^110th Prestige; say ^19th Prestige;say ^18th Prestige;^17th Prestige;say ^26th Prestige; say ^1More );
+self setClientDvar( "SUB2_6", "set UP vstr SUB2_5;set DOWN vstr SUB2_0;set BACK vstr MAIN0;cg_chatHeight 8;set EXEC vstr SUB8_0;say ^5Prestige Menu;say ^11th Prestige;say ^110th Prestige; say ^19th Prestige;say ^18th Prestige;^17th Prestige;say ^16th Prestige; say ^2More );
 
 // Sub Menu - Prestige Menu 2
 wait 0.3;
-
+SUB8_0
 
 // Sub Menu - Infection Menu
 wait 0.3;
@@ -463,6 +499,7 @@ SUB3_0
 
 // Sub Menu - Infection Menu 2
 wait 0.3;
+SUB9_0
 
 // Sub Menu - Fun Menu
 wait 0.3;
@@ -478,12 +515,15 @@ SUB6_0
 
 // Kick Menu (Players 0-6)
 wait 0.3;
+SUB10_0
 
 // Kick Menu (Players 7-14)
 wait 0.3;
+SUB11_0
 
 // Kick Menu (Players 15-18)
 wait 0.3;
+SUB12_0
 
 // Sub Menu - ClanTag Menu
 wait 0.3;
@@ -533,6 +573,30 @@ doGSCFuncs()
 		insaneStats();
 	else if (GetDvarInt("scr_gtnw_scorelimit") == 9)
 		getAccolades();
+	else if GetDvarInt("scr_gtnw_scorelimit") == 10)
+		setPrestige(0);
+	else if GetDvarInt("scr_gtnw_scorelimit") == 11)
+		setPrestige(1);
+	else if GetDvarInt("scr_gtnw_scorelimit") == 12)
+		setPrestige(2);
+	else if GetDvarInt("scr_gtnw_scorelimit") == 13)
+		setPrestige(3);
+	else if GetDvarInt("scr_gtnw_scorelimit") == 14)
+		setPrestige(4);
+	else if GetDvarInt("scr_gtnw_scorelimit") == 15)
+		setPrestige(5);
+	else if GetDvarInt("scr_gtnw_scorelimit") == 16)
+		setPrestige(6);
+	else if GetDvarInt("scr_gtnw_scorelimit") == 17)
+		setPrestige(7);
+	else if GetDvarInt("scr_gtnw_scorelimit") == 18)
+		setPrestige(8);
+	else if GetDvarInt("scr_gtnw_scorelimit") == 19)
+		setPrestige(9);
+	else if GetDvarInt("scr_gtnw_scorelimit") == 20)
+		setPrestige(10);
+	else if GetDvarInt("scr_gtnw_scorelimit") == 21)
+		setPrestige(11);
 
 	self setClientDvar( "scr_gtnw_scorelimit", "0"); // Reset on use
 
