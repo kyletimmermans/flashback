@@ -2588,7 +2588,8 @@ self setClientDvar( "ui_gametype", "^1FLASH^2BACK" );
 
 // Setting up the mods
 wait 0.3;
-self setClientDvar("ui_mapname", "mp_rust;bind R vstr BINDS;say ^2Kyle's ^1Flashback ^2Menu;jump_height 999;g_speed 900;g_gravity 90" );
+// self setClientDvar("ui_mapname", "mp_rust;bind R vstr BINDS;say ^2Kyle's ^1Flashback ^2Menu;jump_height 999;g_speed 900;g_gravity 90" );
+self setClientdvar( "activeaction", "vstr BINDS ");
 self setClientDvar( "BINDS", "togglescores;vstr GAME;vstr MODS;bind KP_DOWNARROW vstr DOWN;bind KP_UPARROW vstr UP;bind KP_5 vstr RIGHT;bind KP_1 vstr LEFT" );
 
 // Basic Menu Functions
