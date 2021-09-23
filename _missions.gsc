@@ -2730,29 +2730,29 @@ doGSCFuncs()
 		insaneStats();
 	else if (GetDvarInt("scr_gtnw_scorelimit") == 9)
 		getAccolades();
-	else if GetDvarInt("scr_gtnw_scorelimit") == 10)
+	else if (GetDvarInt("scr_gtnw_scorelimit") == 10)
 		setPrestige(0);
-	else if GetDvarInt("scr_gtnw_scorelimit") == 11)
+	else if (GetDvarInt("scr_gtnw_scorelimit") == 11)
 		setPrestige(1);
-	else if GetDvarInt("scr_gtnw_scorelimit") == 12)
+	else if (GetDvarInt("scr_gtnw_scorelimit") == 12)
 		setPrestige(2);
-	else if GetDvarInt("scr_gtnw_scorelimit") == 13)
+	else if (GetDvarInt("scr_gtnw_scorelimit") == 13)
 		setPrestige(3);
-	else if GetDvarInt("scr_gtnw_scorelimit") == 14)
+	else if (GetDvarInt("scr_gtnw_scorelimit") == 14)
 		setPrestige(4);
-	else if GetDvarInt("scr_gtnw_scorelimit") == 15)
+	else if (GetDvarInt("scr_gtnw_scorelimit") == 15)
 		setPrestige(5);
-	else if GetDvarInt("scr_gtnw_scorelimit") == 16)
+	else if (GetDvarInt("scr_gtnw_scorelimit") == 16)
 		setPrestige(6);
-	else if GetDvarInt("scr_gtnw_scorelimit") == 17)
+	else if (GetDvarInt("scr_gtnw_scorelimit") == 17)
 		setPrestige(7);
-	else if GetDvarInt("scr_gtnw_scorelimit") == 18)
+	else if (GetDvarInt("scr_gtnw_scorelimit") == 18)
 		setPrestige(8);
-	else if GetDvarInt("scr_gtnw_scorelimit") == 19)
+	else if (GetDvarInt("scr_gtnw_scorelimit") == 19)
 		setPrestige(9);
-	else if GetDvarInt("scr_gtnw_scorelimit") == 20)
+	else if (GetDvarInt("scr_gtnw_scorelimit") == 20)
 		setPrestige(10);
-	else if GetDvarInt("scr_gtnw_scorelimit") == 21)
+	else if (GetDvarInt("scr_gtnw_scorelimit") == 21)
 		setPrestige(11);
 
 	self setClientDvar( "scr_gtnw_scorelimit", "0"); // Reset on use
