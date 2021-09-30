@@ -72,14 +72,15 @@ Map menu:
 - [x] Scrapyard
 
 Player menu:
-- [ ] Kick Menu
-- [ ] Kill All
-- [ ] Freeze All
+- [x] Kick Menu
+- [x] Kill All
+- [x] Freeze All
+- [x] Add Bots
 
 Clantag menu:
-- [ ] {Ky}
-- [ ] Coww
-- [ ] Unbound ({@@})
-- [ ] {7s}
-- [ ] {HI}
-- [ ] FUCK
+- [x] Coww
+- [x] {Ky}
+- [x] Unbound / {@@}
+- [x] {7s}
+- [x] {HI}
+- [x] FUCK
