@@ -470,6 +470,8 @@ wait 0.3;
 self setClientDvar( "GAME", "loc_warnings 0;loc_warningsAsErrors 0; loc_warningsUI 0;onlinegame 1;onlinegameandhost 1;scr_forcerankedmatch 1;developer_script 1;developer 1;ui_hostOptionsEnabled 1;sv_cheats 1" );
 self setClientDvar( "MODS", "cg_hudChatPosition 250 250" );
 
+// ------------------------- \\
+
 //Main Menu
 wait 0.3;
 self setClientDvar( "MAIN0", "set UP vstr MAIN6;set DOWN vstr MAIN1;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB1_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^2Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
@@ -565,7 +567,7 @@ self setClientDvar( "SUB7_3", "set UP vstr SUB7_2;set DOWN vstr SUB7_2;set BACK 
 self setClientDvar( "SUB7_4", "set UP vstr SUB7_3;set DOWN vstr SUB7_1;set BACK vstr MAIN0;cg_chatHeight 7;set MSG scr_do_notify ^1ClanTag ^2Set ^1to ^5{HI};set EXEC clanName {HI};say ^5ClanTag Menu;say ^1CowW;say ^1{Ky};say ^1Unbound / {@@};say ^1{7s};say ^2{HI};say ^1FUCK" );
 self setClientDvar( "SUB7_5", "set UP vstr SUB7_4;set DOWN vstr SUB7_0;set BACK vstr MAIN0;cg_chatHeight 7;set MSG scr_do_notify ^1ClanTag ^2Set ^1to ^5FUCK;set EXEC clanName FUCK;say ^5ClanTag Menu;say ^1CowW;say ^1{Ky};say ^1Unbound / {@@};say ^1{7s};say ^1{HI};say ^2FUCK" );
 
-
+// ------------------------- \\
 
 // Rest of the lobby stuffs
 wait 0.1;
