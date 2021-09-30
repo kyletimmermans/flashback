@@ -1,5 +1,5 @@
 # flashback
-MW2 Mod Menu with a button bind era look and implementation
+MW2 Mod Menu for Xbox360 with a button bind era look and implementation
 
 To keep in mind:
 - [x] Red text base, green select, cyan menu select (or black base?)
