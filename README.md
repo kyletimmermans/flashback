@@ -1,5 +1,11 @@
-# flashback
-MW2 Mod Menu for Xbox360 with a button bind era look and implementation
+![Version 3.0](https://img.shields.io/badge/version-v1.0-orange.svg)
+![IW4.0 Engine - GSC](https://img.shields.io/badge/IW4.0 Engine-GSC-blue.svg)
+![Last Updated](https://img.shields.io/github/last-commit/kyletimmermans/flashback?color=success)
+[![kyletimmermans Twitter](http://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Follow)](https://twitter.com/kyletimmermans)
+
+# <div align="center">Flashback</div>
+
+MW2 Mod Menu for Xbox360 with a Button Bind Era Look and Implementation
 
 To keep in mind:
 - [x] Red text base, green select, cyan menu select (or black base?)
