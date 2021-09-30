@@ -3,8 +3,6 @@ MW2 Mod Menu with a button bind era look and implementation
 
 To keep in mind:
 - [x] Red text base, green select, cyan menu select (or black base?)
-- [ ] Remove xbox button codes and replace with PC
-- [ ] TU6?
 - [x] Pretty sure only a limited amount of lines per menu (8), use "More" line?
 - [x] https://www.youtube.com/watch?v=qippuizZnYY
 - [ ] Put _missions.gsc back into patch_mp.ff
@@ -65,13 +63,13 @@ Fun Menu:
 - [ ] Spawn Finger Gun (Default Weapon)
 
 Map menu:
-- [ ] Rust
-- [ ] Terminal
-- [ ] Highrise
-- [ ] Estate
-- [ ] Karachi
-- [ ] Skidrow
-- [ ] Scrapyard
+- [x] Rust
+- [x] Terminal
+- [x] Highrise
+- [x] Estate
+- [x] Karachi
+- [x] Skidrow
+- [x] Scrapyard
 
 Player menu:
 - [ ] Kick Menu
