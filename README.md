@@ -58,9 +58,9 @@ Fun Menu:
 - [ ] Godmode
 - [ ] UFO
 - [ ] Raining Money
-- [ ] Message For Lobby
-- [ ] Show Dev Sphere
-- [ ] Spawn Finger Gun (Default Weapon)
+- [x] Message For Lobby
+- [x] Show Dev Sphere
+- [x] Spawn Finger Gun (Default Weapon)
 
 Map menu:
 - [x] Rust
