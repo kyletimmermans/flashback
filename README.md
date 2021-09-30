@@ -22,18 +22,18 @@ Unlock menu:
 - [x] Big XP Lobby
 
 Prestige menu:
-- [ ] No prestige
-- [ ] 1st prestige
-- [ ] 2nd prestige
-- [ ] 3rd prestige
-- [ ] 4th prestige
-- [ ] 5th prestige
-- [ ] 6th prestige
-- [ ] 7th prestige
-- [ ] 8th prestige
-- [ ] 9th prestige
-- [ ] 10th prestige
-- [ ] 11th prestige
+- [x] No prestige
+- [x] 1st prestige
+- [x] 2nd prestige
+- [x] 3rd prestige
+- [x] 4th prestige
+- [x] 5th prestige
+- [x] 6th prestige
+- [x] 7th prestige
+- [x] 8th prestige
+- [x] 9th prestige
+- [x] 10th prestige
+- [x] 11th prestige
 
 Infections Menu (Toggle On/Off):
 - [ ] Aimbot - red squares (no green square? What does it do?)
