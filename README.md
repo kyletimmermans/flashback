@@ -7,6 +7,8 @@
 
 <div align="center">MW2 Mod Menu for Xbox360 with a Button Bind Era Look and Implementation</div>
 
+</br>
+
 To keep in mind:
 - [x] Red text base, green select, cyan menu select (or black base?)
 - [x] Pretty sure only a limited amount of lines per menu (8), use "More" line?
