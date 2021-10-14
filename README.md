@@ -90,6 +90,7 @@ Map Menu:
 
 Player Menu:
 - [x] Kick Menu
+- [x] Infect All 
 - [x] Kill All
 - [x] Freeze All
 - [x] Add Bots
