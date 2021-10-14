@@ -19,7 +19,16 @@ To keep in mind:
 - [ ] Couldn't have done this without ImACoww from TheTechGame, his Infectable v3 menu is the base / inspiration of my menu
 - [ ] https://www.se7ensins.com/forums/threads/mw2-text-patch-codes.450887/
 
-Unlock menu:
+Main Menu:
+- [x] Unlock Menu
+- [x] Prestige Menu
+- [x] Infection Menu
+- [x] Fun Menu
+- [x] Map Menu
+- [x] Player Menu
+- [x] ClanTag Menu
+
+Unlock Menu:
 - [x] Unlock all
 - [x] Level 70
 - [x] Insane leaderboard stats
@@ -27,7 +36,7 @@ Unlock menu:
 - [x] Colored class names
 - [x] Big XP Lobby
 
-Prestige menu:
+Prestige Menu:
 - [x] No prestige
 - [x] 1st prestige
 - [x] 2nd prestige
@@ -70,7 +79,7 @@ Fun Menu:
 - [x] Show Dev Sphere
 - [x] Spawn Finger Gun (Default Weapon)
 
-Map menu:
+Map Menu:
 - [x] Rust
 - [x] Terminal
 - [x] Highrise
@@ -79,13 +88,43 @@ Map menu:
 - [x] Skidrow
 - [x] Scrapyard
 
-Player menu:
+Player Menu:
 - [x] Kick Menu
 - [x] Kill All
 - [x] Freeze All
 - [x] Add Bots
 
-Clantag menu:
+Kick Menu:
+- [x] Players 0-6
+- [x] Players 7-13
+- [x] Players 14-18
+
+Kick Menu (Players 0-6):
+- [x] Kick Player 0
+- [x] Kick Player 1
+- [x] Kick Player 2
+- [x] Kick Player 3
+- [x] Kick Player 4
+- [x] Kick Player 5
+- [x] Kick Player 6
+
+Kick Menu (Players 7-13):
+- [x] Kick Player 7
+- [x] Kick Player 8
+- [x] Kick Player 9
+- [x] Kick Player 10
+- [x] Kick Player 11
+- [x] Kick Player 12
+- [x] Kick Player 13
+
+Kick Menu (Players 14-18):
+- [x] Kick Player 14
+- [x] Kick Player 15
+- [x] Kick Player 16
+- [x] Kick Player 17
+- [x] Kick Player 18
+
+Clantag Menu:
 - [x] Coww
 - [x] {Ky}
 - [x] Unbound / {@@}
