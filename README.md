@@ -91,7 +91,7 @@ Map Menu:
 Player Menu:
 - [x] Kick Menu
 - [x] Infect All 
-- [ ] Kill All
+- [ ] Kill All (Needs testing)
 - [x] Freeze All
 - [x] Add Bots
 
