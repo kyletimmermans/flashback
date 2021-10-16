@@ -19,14 +19,30 @@ To keep in mind:
 - [ ] Couldn't have done this without ImACoww from TheTechGame, his Infectable v3 menu is the base / inspiration of my menu
 - [x] https://www.se7ensins.com/forums/threads/mw2-text-patch-codes.450887/
 
+Controls:
+DPAD_UP = Open / Scroll Up
+DPAD_DOWN = Scroll Down
+DPAD_RIGHT = Scroll Through Toggles
+A_BUTTON = Select
+B_BUTTON = Back
+
 Main Menu:
 - [x] Unlock Menu
 - [x] Prestige Menu
 - [x] Infection Menu
 - [x] Fun Menu
 - [x] Map Menu
-- [x] Player Menu
+- [x] Game Menu
 - [x] ClanTag Menu
+
+Player Menu:
+- [x] Kick Menu
+- [x] Infect All 
+- [x] Kill All
+- [x] Freeze All
+- [x] Add Bots
+
+_____________
 
 Unlock Menu:
 - [x] Unlock all
