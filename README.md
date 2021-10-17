@@ -19,12 +19,13 @@ To keep in mind:
 - [ ] Couldn't have done this without ImACoww from TheTechGame, his Infectable v3 menu is the base / inspiration of my menu
 - [x] https://www.se7ensins.com/forums/threads/mw2-text-patch-codes.450887/
 
-Controls:
-DPAD_UP = Open / Scroll Up
-DPAD_DOWN = Scroll Down
-DPAD_RIGHT = Scroll Through Toggles
-A_BUTTON = Select
-B_BUTTON = Back
+<div>Controls:</div>
+<div>DPAD_UP = Open / Scroll Up</div>
+<div>DPAD_DOWN = Scroll Down</div>
+<div>DPAD_RIGHT = Select</div>
+<div>DPAD_LEFT = Back / Exit</div>
+<div>RB_BUTTON = Move Toggle Right</div>
+<div>LB_BUTTON = Move Toggle Left</div>
 
 Main Menu:
 - [x] Unlock Menu
