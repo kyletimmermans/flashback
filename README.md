@@ -10,15 +10,12 @@
 </br>
 
 To keep in mind:
-- [x] Red text base, green select, cyan menu select (or black base?)
-- [x] Pretty sure only a limited amount of lines per menu (8), use "More" line?
 - [x] https://www.youtube.com/watch?v=qippuizZnYY
-- [ ] Put _missions.gsc back into patch_mp.ff
-- [x] setclientDvar makes infections sticky
-- [ ] only file left in this repo should be _missions.gsc and release should be zipped up patch_mp.ff file
-- [ ] Couldn't have done this without ImACoww from TheTechGame, his Infectable v3 menu is the base / inspiration of my menu
 - [x] https://www.se7ensins.com/forums/threads/mw2-text-patch-codes.450887/
 - [x] https://www.thetechgame.com/Archives/t=5918100/mw2-button-codes.html
+- [ ] Put _missions.gsc back into patch_mp.ff
+- [ ] Only file left in this repo should be _missions.gsc and release should be zipped up patch_mp.ff file
+- [ ] Couldn't have done this without ImACoww from TheTechGame, his Infectable v3 menu is the base / inspiration of my menu
 
 <div>Controls:</div>
 <div>DPAD_UP = Open / Scroll Up</div>
@@ -48,6 +45,8 @@ _____________
 
 ToDo:
 - [ ] Do Infection Menus
+- [ ] Fix GSC functions not working
 - [ ] Unbind A and B everytime we open menu and bind them to EXEC and BACK so they can be our new select and back button for the menu. Rebind them on menu exit. Also change dpad right and left to be the toggle switches.
 - [ ] Add Toggles, even for gsc functions
 - [ ] Test everything to make sure it works
+- [ ] Release
