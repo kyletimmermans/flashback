@@ -47,5 +47,5 @@ _____________
 
 ToDo:
 - [ ] Do Infection Menus
-- [ ] Add Toggle
+- [ ] Add Toggles, even for gsc functions
 - [ ] Test everything to make sure it works
