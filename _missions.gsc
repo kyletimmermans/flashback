@@ -450,7 +450,8 @@ self setClientDvar( "BINDS", "togglescores;vstr GAME;vstr MODS;bind DPAD_UP vstr
 
 // Basic Menu Functions
 wait 0.3;
-self setClientDvar( "UP", "vstr MAIN0" );
+self setClientDvar( "UP", "vstr MAIN1" );
+self setClientDvar( "DOWN", "vstr MAIN0" );
 self setClientDvar( "RIGHT", "vstr MSG;vstr EXEC" ); // MSG needed here?
 self setClientDvar( "LEFT", "vstr BACK" );
 
@@ -473,15 +474,20 @@ self setClientDvar( "INFECT", "ui_gametype gtnw;bind BUTTON_BACK vstr BINDS;jump
 
 // ------------------------- \\
 
+// First Menu
+wait 0.3;
+self setClientDvar( "MAIN0", "set UP vstr MAIN1;set DOWN vstr MAIN1;set BACK vstr EXIT;cg_chatHeight 3;set EXEC vstr SUB0_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^2Mod Menu;say ^1Player Menu" );
+self setClientDvar( "MAIN1", "set UP vstr MAIN0;set DOWN vstr MAIN0;set BACK vstr EXIT;cg_chatHeight 3;set EXEC vstr SUB5_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Main Menu;say ^2Player Menu" );
+
 // Main Menu
 wait 0.3;
-self setClientDvar( "MAIN0", "set UP vstr MAIN6;set DOWN vstr MAIN1;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB1_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^2Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
-self setClientDvar( "MAIN1", "set UP vstr MAIN0;set DOWN vstr MAIN2;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB2_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^2Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
-self setClientDvar( "MAIN2", "set UP vstr MAIN1;set DOWN vstr MAIN3;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB3_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^2Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
-self setClientDvar( "MAIN3", "set UP vstr MAIN2;set DOWN vstr MAIN4;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB4_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^2Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
-self setClientDvar( "MAIN4", "set UP vstr MAIN3;set DOWN vstr MAIN5;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB5_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^2Map Menu;say ^1Player Menu;say ^1ClanTag Menu" );
-self setClientDvar( "MAIN5", "set UP vstr MAIN4;set DOWN vstr MAIN6;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB6_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^2Player Menu;say ^1ClanTag Menu" );
-self setClientDvar( "MAIN6", "set UP vstr MAIN5;set DOWN vstr MAIN0;set BACK vstr EXIT;cg_chatHeight 8;set EXEC vstr SUB7_0;say ^1K^2y^3l^4e^5'^6s ^1F^2l^3a^4s^5h^6b^1a^2c^3k ^4M^5e^6n^1u ^2v^31^4.^50;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^1Player Menu;say ^2ClanTag Menu" );
+self setClientDvar( "SUB0_0", "set UP vstr SUB0_6;set DOWN vstr SUB0_1;set BACK vstr MAIN0;cg_chatHeight 8;set EXEC vstr SUB1_0;say ^5Main Menu;say ^2Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^1Game Menu;say ^1ClanTag Menu" );
+self setClientDvar( "SUB0_1", "set UP vstr SUB0_0;set DOWN vstr SUB0_2;set BACK vstr MAIN0;cg_chatHeight 8;set EXEC vstr SUB2_0;say ^5Main Menu;say ^1Unlock Menu;say ^2Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^1Game Menu;say ^1ClanTag Menu" );
+self setClientDvar( "SUB0_2", "set UP vstr SUB0_1;set DOWN vstr SUB0_3;set BACK vstr MAIN0;cg_chatHeight 8;set EXEC vstr SUB3_0;say ^5Main Menu;say ^1Unlock Menu;say ^1Prestige Menu;say ^2Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^1Game Menu;say ^1ClanTag Menu" );
+self setClientDvar( "SUB0_3", "set UP vstr SUB0_2;set DOWN vstr SUB0_4;set BACK vstr MAIN0;cg_chatHeight 8;set EXEC vstr SUB4_0;say ^5Main Menu;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^2Fun Menu;say ^1Map Menu;say ^1Game Menu;say ^1ClanTag Menu" );
+self setClientDvar( "SUB0_4", "set UP vstr SUB0_3;set DOWN vstr SUB0_5;set BACK vstr MAIN0;cg_chatHeight 8;set EXEC vstr SUB5_0;say ^5Main Menu;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^2Map Menu;say ^1Game Menu;say ^1ClanTag Menu" );
+self setClientDvar( "SUB0_5", "set UP vstr SUB0_4;set DOWN vstr SUB0_6;set BACK vstr MAIN0;cg_chatHeight 8;set EXEC vstr SUB15_0;say ^5Main Menu;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^2Game Menu;say ^1ClanTag Menu" );
+self setClientDvar( "SUB0_6", "set UP vstr SUB0_5;set DOWN vstr SUB0_0;set BACK vstr MAIN0;cg_chatHeight 8;set EXEC vstr SUB7_0;say ^5Main Menu;say ^1Unlock Menu;say ^1Prestige Menu;say ^1Infection Menu;say ^1Fun Menu;say ^1Map Menu;say ^1Game Menu;say ^2ClanTag Menu" );
 
 // Sub Menu - Unlock Menu
 wait 0.3;
@@ -502,7 +508,6 @@ self setClientDvar( "SUB2_4", "set UP vstr SUB2_3;set DOWN vstr SUB2_5;set BACK 
 self setClientDvar( "SUB2_5", "set UP vstr SUB2_4;set DOWN vstr SUB2_6;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^16th ^2Prestige ^5Set!;set EXEC scr_gtnw_scorelimit 16;say ^5Prestige Menu;say ^111th Prestige;say ^110th Prestige;say ^19th Prestige;say ^18th Prestige;say ^17th Prestige;say ^26th Prestige;say ^1More" );
 self setClientDvar( "SUB2_6", "set UP vstr SUB2_5;set DOWN vstr SUB2_0;set BACK vstr MAIN0;cg_chatHeight 8;set EXEC vstr SUB8_0;say ^5Prestige Menu;say ^111th Prestige;say ^110th Prestige;say ^19th Prestige;say ^18th Prestige;say ^17th Prestige;say ^16th Prestige;say ^2More" );
 
-
 // Sub Menu - Prestige Menu 2
 wait 0.3;
 self setClientDvar( "SUB8_0", "set UP vstr SUB8_5;set DOWN vstr SUB8_1;set BACK vstr SUB2_0;cg_chatHeight 7;set MSG scr_do_notify ^15th ^2Prestige ^5Set!;set EXEC scr_gtnw_scorelimit 15;say ^5Prestige Menu;say ^25th Prestige;say ^14th Prestige;say ^13rd Prestige;say ^12nd Prestige;say ^11st Prestige;say ^10 / No Prestige" );
@@ -519,6 +524,10 @@ wait 0.3;
 // Sub Menu - Infection Menu 2
 wait 0.3;
 // SUB9_0
+
+// Sub Menu - Infection Menu 3
+wait 0.3;
+// SUB17_0
 
 // Sub Menu - Fun Menu
 wait 0.3;
@@ -540,6 +549,35 @@ self setClientDvar( "SUB5_4", "set UP vstr SUB5_3;set DOWN vstr SUB5_5;set BACK 
 self setClientDvar( "SUB5_5", "set UP vstr SUB5_4;set DOWN vstr SUB5_6;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^1Map ^2Changed ^1to ^5Skidrow!;set EXEC map mp_nightshift;say ^5Map Menu;say ^1Rust;say ^1Terminal;say ^1Highrise;say ^1Estate;say ^1Karachi;say ^2Skidrow;say ^1Scrapyard" );
 self setClientDvar( "SUB5_6", "set UP vstr SUB5_5;set DOWN vstr SUB5_0;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^1Map ^2Changed ^1to ^5Scrapyard!;set EXEC map mp_boneyard;say ^5Map Menu;say ^1Rust;say ^1Terminal;say ^1Highrise;say ^1Estate;say ^1Karachi;say ^1Skidrow;say ^2Scrapyard" );
 
+// Sub Menu - Game Menu 1
+wait 0.3;
+self setClientDvar( "SUB15_0", "set UP vstr SUB15_6;set DOWN vstr SUB15_1;set BACK vstr SUB0_0;cg_chatHeight 8;set MSG scr_do_notify ^2jump_height ^1Toggled;set EXEC toggle jump_height 999 0;say ^5Game Menu;say ^2Toggle Jump Height;say ^1Toggle Gravity;say ^1Toggle Speed;say ^1Toggle Friction;say ^1Toggle Timescale;say ^1Toggle Allow Team Change;say ^1More" );
+self setClientDvar( "SUB15_1", "set UP vstr SUB15_0;set DOWN vstr SUB15_2;set BACK vstr SUB0_0;cg_chatHeight 8;set MSG scr_do_notify ^2g_gravity ^1Toggled;set EXEC toggle g_gravity 99 1 999;say ^5Game Menu;say ^1Toggle Jump Height;say ^2Toggle Gravity;say ^1Toggle Speed;say ^1Toggle Friction;say ^1Toggle Timescale;say ^1Toggle Allow Team Change;say ^1More" );
+self setClientDvar( "SUB15_2", "set UP vstr SUB15_1;set DOWN vstr SUB15_3;set BACK vstr SUB0_0;cg_chatHeight 8;set MSG scr_do_notify ^2g_speed ^1Toggled;set EXEC toggle g_speed 900 800 400 100 0;say ^5Game Menu;say ^1Toggle Jump Height;say ^1Toggle Gravity;say ^2Toggle Speed;say ^1Toggle Friction;say ^1Toggle Timescale;say ^1Toggle Allow Team Change;say ^1More" );
+self setClientDvar( "SUB15_3", "set UP vstr SUB15_2;set DOWN vstr SUB15_4;set BACK vstr SUB0_0;cg_chatHeight 8;set MSG scr_do_notify ^2Friction ^1Toggled;set EXEC toggle friction 0.001 999 2;say ^5Game Menu;say ^1Toggle Jump Height;say ^1Toggle Gravity;say ^1Toggle Speed;say ^2Toggle Friction;say ^1Toggle Timescale;say ^1Toggle Allow Team Change;say ^1More" );
+self setClientDvar( "SUB15_4", "set UP vstr SUB15_3;set DOWN vstr SUB15_5;set BACK vstr SUB0_0;cg_chatHeight 8;set MSG scr_do_notify ^2Timescale ^1Toggled;set EXEC toggle timescale 0.1 0.5 2 5 10 1;say ^5Game Menu;say ^1Toggle Jump Height;say ^1Toggle Gravity;say ^1Toggle Speed;say ^1Toggle Friction;say ^2Toggle Timescale;say ^1Toggle Allow Team Change;say ^1More" );
+self setClientDvar( "SUB15_5", "set UP vstr SUB15_4;set DOWN vstr SUB15_6;set BACK vstr SUB0_0;cg_chatHeight 8;set MSG scr_do_notify ^2ui_allow_teamChange ^1Toggled;set EXEC toggle ui_allow_teamchange 1 0;say ^5Game Menu;say ^1Toggle Jump Height;say ^1Toggle Gravity;say ^1Toggle Speed;say ^1Toggle Friction;say ^1Toggle Timescale;say ^2Toggle Allow Team Change;say ^1More" );
+self setClientDvar( "SUB15_6", "set UP vstr SUB15_5;set DOWN vstr SUB15_0;set BACK vstr SUB0_0;cg_chatHeight 8;set EXEC vstr SUB16_0;say ^5Game Menu;say ^1Toggle Jump Height;say ^1Toggle Gravity;say ^1Toggle Speed;say ^1Toggle Friction;say ^1Toggle Timescale;say ^1Toggle Allow Team Change;say ^2More" );
+
+// Sub Menu - Game Menu 2
+wait 0.3;
+self setClientDvar( "SUB16_0", "set UP vstr SUB16_6;set DOWN vstr SUB16_1;set BACK vstr SUB15_0;cg_chatHeight 8;set MSG scr_do_notify ^2g_knockBack ^1Toggled;set EXEC toggle g_knockback 999 0 -999;say ^5Game Menu;say ^2Toggle Knockback;say ^1Toggle Killcam Time;say ^1Toggle Dropshot Time;say ^1Toggle Melee Range;say ^1Toggle Glass Weaken Damage;say ^1Toggle Glass Break;say ^1Toggle Allow Killstreaks" );
+self setClientDvar( "SUB16_1", "set UP vstr SUB16_0;set DOWN vstr SUB16_2;set BACK vstr SUB15_0;cg_chatHeight 8;set MSG scr_do_notify ^2scr_killCam_time ^1Toggled;set EXEC toggle scr_killcam_time 999 1;say ^5Game Menu;say ^1Toggle Knockback;say ^2Toggle Killcam Time;say ^1Toggle Dropshot Time;say ^1Toggle Melee Range;say ^1Toggle Glass Weaken Damage;say ^1Toggle Glass Break;say ^1Toggle Allow Killstreaks" );
+self setClientDvar( "SUB16_2", "set UP vstr SUB16_1;set DOWN vstr SUB16_3;set BACK vstr SUB15_0;cg_chatHeight 8;set MSG scr_do_notify ^2cl_stanceHoldTime ^1Toggled;set EXEC toggle cl_stanceHoldTime 0.001 99 0;say ^5Game Menu;say ^1Toggle Knockback;say ^1Toggle Killcam Time;say ^2Toggle Dropshot Time;say ^1Toggle Melee Range;say ^1Toggle Glass Weaken Damage;say ^1Toggle Glass Break;say ^1Toggle Allow Killstreaks" );
+self setClientDvar( "SUB16_3", "set UP vstr SUB16_2;set DOWN vstr SUB16_4;set BACK vstr SUB15_0;cg_chatHeight 8;set MSG scr_do_notify ^2player_meleeRange ^1Toggled;set EXEC toggle player_meleeRange 999 0 1;say ^5Game Menu;say ^1Toggle Knockback;say ^1Toggle Killcam Time;say ^1Toggle Dropshot Time;say ^2Toggle Melee Range;say ^1Toggle Glass Weaken Damage;say ^1Toggle Glass Break;say ^1Toggle Allow Killstreaks" );
+self setClientDvar( "SUB16_4", "set UP vstr SUB16_3;set DOWN vstr SUB16_5;set BACK vstr SUB15_0;cg_chatHeight 8;set MSG scr_do_notify ^2glass_damageToWeaken ^1Toggled;set EXEC toggle glass_damageToWeaken 20000 10000 1000 1;say ^5Game Menu;say ^1Toggle Knockback;say ^1Toggle Killcam Time;say ^1Toggle Dropshot Time;say ^1Toggle Melee Range;say ^2Toggle Glass Weaken Damage;say ^1Toggle Glass Break;say ^1Toggle Allow Killstreaks" );
+self setClientDvar( "SUB16_5", "set UP vstr SUB16_4;set DOWN vstr SUB16_6;set BACK vstr SUB15_0;cg_chatHeight 8;set MSG scr_do_notify ^2glass_damageToDestory ^1Toggled;set EXEC toggle glass_damageToDestory 65535 1;say ^5Game Menu;say ^1Toggle Knockback;say ^1Toggle Killcam Time;say ^1Toggle Dropshot Time;say ^1Toggle Melee Range;say ^1Toggle Glass Weaken Damage;say ^2Toggle Glass Break;say ^1Toggle Allow Killstreaks" );
+self setClientDvar( "SUB16_6", "set UP vstr SUB16_5;set DOWN vstr SUB16_0;set BACK vstr SUB15_0;cg_chatHeight 8;set MSG scr_do_notify ^2glass_damageToDestory ^1Toggled;set EXEC toggle scr_killstreak_allow 0 1;say ^5Game Menu;say ^1Toggle Knockback;say ^1Toggle Killcam Time;say ^1Toggle Dropshot Time;say ^1Toggle Melee Range;say ^1Toggle Glass Weaken Damage;say ^1Toggle Glass Break;say ^2Toggle Allow Killstreaks" );
+
+// Sub Menu - ClanTag Menu
+wait 0.3;
+self setClientDvar( "SUB7_0", "set UP vstr SUB7_5;set DOWN vstr SUB7_5;set BACK vstr MAIN0;cg_chatHeight 7;set MSG scr_do_notify ^1ClanTag ^2Set ^1to ^5CowW;set EXEC clanName CowW;say ^5ClanTag Menu;say ^2CowW;say ^1{Ky};say ^1Unbound / {@@};say ^1{7s};say ^1{HI};say ^1FUCK" );
+self setClientDvar( "SUB7_1", "set UP vstr SUB7_0;set DOWN vstr SUB7_4;set BACK vstr MAIN0;cg_chatHeight 7;set MSG scr_do_notify ^1ClanTag ^2Set ^1to ^5{Ky};set EXEC clanName {Ky};say ^5ClanTag Menu;say ^1CowW;say ^2{Ky};say ^1Unbound / {@@};say ^1{7s};say ^1{HI};say ^1FUCK" );
+self setClientDvar( "SUB7_2", "set UP vstr SUB7_1;set DOWN vstr SUB7_3;set BACK vstr MAIN0;cg_chatHeight 7;set MSG scr_do_notify ^1ClanTag ^2Set ^1to ^5Unbound / {@@};set EXEC clanName {@@};say ^5ClanTag Menu;say ^1CowW;say ^1{Ky};say ^2Unbound / {@@};say ^1{7s};say ^1{HI};say ^1FUCK" );
+self setClientDvar( "SUB7_3", "set UP vstr SUB7_2;set DOWN vstr SUB7_2;set BACK vstr MAIN0;cg_chatHeight 7;set MSG scr_do_notify ^1ClanTag ^2Set ^1to ^5{7s};set EXEC clanName {7s};say ^5ClanTag Menu;say ^1CowW;say ^1{Ky};say ^1Unbound / {@@};say ^2{7s};say ^1{HI};say ^1FUCK" );
+self setClientDvar( "SUB7_4", "set UP vstr SUB7_3;set DOWN vstr SUB7_1;set BACK vstr MAIN0;cg_chatHeight 7;set MSG scr_do_notify ^1ClanTag ^2Set ^1to ^5{HI};set EXEC clanName {HI};say ^5ClanTag Menu;say ^1CowW;say ^1{Ky};say ^1Unbound / {@@};say ^1{7s};say ^2{HI};say ^1FUCK" );
+self setClientDvar( "SUB7_5", "set UP vstr SUB7_4;set DOWN vstr SUB7_0;set BACK vstr MAIN0;cg_chatHeight 7;set MSG scr_do_notify ^1ClanTag ^2Set ^1to ^5FUCK;set EXEC clanName FUCK;say ^5ClanTag Menu;say ^1CowW;say ^1{Ky};say ^1Unbound / {@@};say ^1{7s};say ^1{HI};say ^2FUCK" );
+
 // Sub Menu - Player Menu
 wait 0.3;
 self setClientDvar( "SUB5_0", "set UP vstr SUB5_4;set DOWN vstr SUB5_1;set BACK vstr MAIN0;cg_chatHeight 6;set EXEC vstr SUB14_0;say ^5Player Menu;say ^2Kick Menu;say ^1Infect All;say ^1Kill All;say ^1Freeze All;say ^1Add Bots" );
@@ -553,7 +591,6 @@ wait 0.3;
 self setClientDvar( "SUB14_0", "set UP vstr SUB14_2;set DOWN vstr SUB14_1;set BACK vstr SUB5_0;cg_chatHeight 4;set EXEC vstr SUB10_0;say ^5Kick Menu;say ^2Players 0-6;say ^1Players 7-13;say Players 14-18" );
 self setClientDvar( "SUB14_1", "set UP vstr SUB14_0;set DOWN vstr SUB14_2;set BACK vstr SUB5_0;cg_chatHeight 4;set EXEC vstr SUB11_0;say ^5Kick Menu;say ^1Players 0-6;say ^2Players 7-13;say ^1Players 14-18" );
 self setClientDvar( "SUB14_2", "set UP vstr SUB14_1;set DOWN vstr SUB14_0;set BACK vstr SUB5_0;cg_chatHeight 4;set EXEC vstr SUB12_0;say ^5Kick Menu;say ^1Players 0-6;say ^1Players 7-13;say ^2Players 14-18)" );
-
 
 // Sub Menu - Kick Menu (Players 0-6)
 wait 0.3;
@@ -582,15 +619,6 @@ self setClientDvar( "SUB12_1", "set UP vstr SUB12_0;set DOWN vstr SUB12_2;set BA
 self setClientDvar( "SUB12_2", "set UP vstr SUB12_1;set DOWN vstr SUB12_3;set BACK vstr SUB14_0;cg_chatHeight 6;set MSG scr_do_notify ^1Player^5 16 ^2Kicked;set EXEC clientKick 16;say ^5Kick Menu (Players 14-18);say ^1Kick Player 14;say ^1Kick Player 15;say ^2Kick Player 16;say ^1Kick Player 17;say ^1Kick Player 18" );
 self setClientDvar( "SUB12_3", "set UP vstr SUB12_2;set DOWN vstr SUB12_4;set BACK vstr SUB14_0;cg_chatHeight 6;set MSG scr_do_notify ^1Player^5 17 ^2Kicked;set EXEC clientKick 17;say ^5Kick Menu (Players 14-18);say ^1Kick Player 14;say ^1Kick Player 15;say ^1Kick Player 16;say ^2Kick Player 17;say ^1Kick Player 18" );
 self setClientDvar( "SUB12_4", "set UP vstr SUB12_3;set DOWN vstr SUB12_0;set BACK vstr SUB14_0;cg_chatHeight 6;set MSG scr_do_notify ^1Player^5 18 ^2Kicked;set EXEC clientKick 18;say ^5Kick Menu (Players 14-18);say ^1Kick Player 14;say ^1Kick Player 15;say ^1Kick Player 16;say ^1Kick Player 17;say ^2Kick Player 18" );
-
-// Sub Menu - ClanTag Menu
-wait 0.3;
-self setClientDvar( "SUB7_0", "set UP vstr SUB7_5;set DOWN vstr SUB7_5;set BACK vstr MAIN0;cg_chatHeight 7;set MSG scr_do_notify ^1ClanTag ^2Set ^1to ^5CowW;set EXEC clanName CowW;say ^5ClanTag Menu;say ^2CowW;say ^1{Ky};say ^1Unbound / {@@};say ^1{7s};say ^1{HI};say ^1FUCK" );
-self setClientDvar( "SUB7_1", "set UP vstr SUB7_0;set DOWN vstr SUB7_4;set BACK vstr MAIN0;cg_chatHeight 7;set MSG scr_do_notify ^1ClanTag ^2Set ^1to ^5{Ky};set EXEC clanName {Ky};say ^5ClanTag Menu;say ^1CowW;say ^2{Ky};say ^1Unbound / {@@};say ^1{7s};say ^1{HI};say ^1FUCK" );
-self setClientDvar( "SUB7_2", "set UP vstr SUB7_1;set DOWN vstr SUB7_3;set BACK vstr MAIN0;cg_chatHeight 7;set MSG scr_do_notify ^1ClanTag ^2Set ^1to ^5Unbound / {@@};set EXEC clanName {@@};say ^5ClanTag Menu;say ^1CowW;say ^1{Ky};say ^2Unbound / {@@};say ^1{7s};say ^1{HI};say ^1FUCK" );
-self setClientDvar( "SUB7_3", "set UP vstr SUB7_2;set DOWN vstr SUB7_2;set BACK vstr MAIN0;cg_chatHeight 7;set MSG scr_do_notify ^1ClanTag ^2Set ^1to ^5{7s};set EXEC clanName {7s};say ^5ClanTag Menu;say ^1CowW;say ^1{Ky};say ^1Unbound / {@@};say ^2{7s};say ^1{HI};say ^1FUCK" );
-self setClientDvar( "SUB7_4", "set UP vstr SUB7_3;set DOWN vstr SUB7_1;set BACK vstr MAIN0;cg_chatHeight 7;set MSG scr_do_notify ^1ClanTag ^2Set ^1to ^5{HI};set EXEC clanName {HI};say ^5ClanTag Menu;say ^1CowW;say ^1{Ky};say ^1Unbound / {@@};say ^1{7s};say ^2{HI};say ^1FUCK" );
-self setClientDvar( "SUB7_5", "set UP vstr SUB7_4;set DOWN vstr SUB7_0;set BACK vstr MAIN0;cg_chatHeight 7;set MSG scr_do_notify ^1ClanTag ^2Set ^1to ^5FUCK;set EXEC clanName FUCK;say ^5ClanTag Menu;say ^1CowW;say ^1{Ky};say ^1Unbound / {@@};say ^1{7s};say ^1{HI};say ^2FUCK" );
 
 // ------------------------- \\
 
