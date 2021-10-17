@@ -68,7 +68,7 @@ Prestige Menu:
 - [x] 11th prestige
 
 Infections Menu (Toggle On/Off):
-- [ ] Aimbot - red squares (no green square? What does it do?)
+- [ ] Aimbot - red squares (no green square? What does it do? debug purposes?)
 - [ ] Wallhack
 - [ ] Big Minimap / UAV Always On 
 - [ ] Laser
