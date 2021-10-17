@@ -22,10 +22,10 @@ To keep in mind:
 <div>Controls:</div>
 <div>DPAD_UP = Open / Scroll Up</div>
 <div>DPAD_DOWN = Scroll Down</div>
-<div>DPAD_RIGHT = Select</div>
-<div>DPAD_LEFT = Back / Exit</div>
-<div>RB_BUTTON = Move Toggle Right</div>
-<div>LB_BUTTON = Move Toggle Left</div>
+<div>DPAD_RIGHT = Move Toggle Right</div>
+<div>DPAD_LEFT = Move Toggle Right</div>
+<div>A_BUTTON = Select</div>
+<div>LB_BUTTON = Back / Exit</div>
 
 Main Menu:
 - [x] Unlock Menu
