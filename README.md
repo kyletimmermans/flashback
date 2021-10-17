@@ -47,5 +47,6 @@ _____________
 
 ToDo:
 - [ ] Do Infection Menus
+- [ ] Unbind A and B everytime we open menu and bind them to EXEC and BACK so they can be our new select and back button for the menu. Rebind them on menu exit. Also change dpad right and left to be the toggle switches.
 - [ ] Add Toggles, even for gsc functions
 - [ ] Test everything to make sure it works
