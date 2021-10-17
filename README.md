@@ -85,7 +85,7 @@ Infections Menu (Toggle On/Off):
 - [ ] Instant reload w/ sleight of hand
 - [ ] Small crosshair w/ steady aim
 - [ ] Force Host
-- [ ] Chopper Gunner and AC130 in care packages only
+- [ ] Airdrop Editor [ AC130, Chopper Gunner, Nuke ]
 
 Fun Menu:
 - [ ] Infinite ammo
