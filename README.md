@@ -18,6 +18,12 @@ To keep in mind:
 - [ ] Only file left in this repo should be _missions.gsc and release should be zipped up patch_mp.ff file
 - [ ] Couldn't have done this without ImACoww from TheTechGame, his Infectable v3 menu is the base / inspiration of my menu
 
+Known bugs:
+- [ ] scr dvars unrecognized, bottom left corner messages
+- [ ] scr_notify messages overlap
+- [ ] Can't see the leave (y/n) message
+- [ ] GSC Functions not running
+
 <div>Controls:</div>
 <div>DPAD_UP = Open / Scroll Up</div>
 <div>DPAD_DOWN = Scroll Down</div>
