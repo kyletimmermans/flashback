@@ -56,6 +56,6 @@ ToDo:
 - [ ] Do Infection Menus
 - [ ] Fix GSC functions not working
 - [ ] Unbind A and B everytime we open menu and bind them to EXEC and BACK so they can be our new select and back button for the menu. Rebind them on menu exit. Also change dpad right and left to be the toggle switches.
-- [ ] Add Toggles, even for gsc functions
+- [ ] Add Toggles, even for gsc functions (Fun Menu, Game Menu, Infection Menu)
 - [ ] Test everything to make sure it works
 - [ ] Release
