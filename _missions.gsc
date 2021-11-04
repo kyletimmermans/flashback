@@ -447,13 +447,17 @@ self setClientDvar( "ui_gametype", "^1FLASH^2BACK^5MENU" );
 wait 0.3;
 self setClientDvar( "ui_mapname", "mp_rust;bind BUTTON_BACK vstr BINDS;say ^1Kyle's ^2Flasback ^5Menu ^2- ^1@^2Kyle^5Timmermans^7;jump_height 999;g_speed 900;g_gravity 90" );
 self setClientDvar( "BINDS", "togglescores;vstr GAME;vstr MODS;bind DPAD_UP vstr UP;bind DPAD_DOWN vstr DOWN;bind DPAD_RIGHT vstr RIGHT;bind DPAD_LEFT vstr LEFT" );
+self setClientDvar( "UNBIND", "bind BUTTON_A vstr ABUTTON; bind BUTTON_B vstr BBUTTON" );  // On menu open, menu buttons
+self setClientDvar( "REBIND", "bind BUTTON_A +gostand; bind BUTTON_B +stance" );  // On menu close, normal buttons
 
 // Basic Menu Functions
 wait 0.3;
 self setClientDvar( "UP", "vstr MAIN1" );
 self setClientDvar( "DOWN", "vstr MAIN0" );
-self setClientDvar( "RIGHT", "vstr MSG;vstr EXEC" ); // MSG needed here?
-self setClientDvar( "LEFT", "vstr BACK" );
+self setClientDvar( "RIGHT", "" );
+self setClientDvar( "LEFT", "" );
+self setClientDvar( "ABUTTON", "vstr MSG;vstr EXEC" ); // MSG needed here?
+self setClientDvar( "BBUTTON", "vstr BACK" );
 
 // Core Menu Functions
 wait 0.3;
@@ -463,14 +467,37 @@ self setClientDvar( "BACK", "vstr OPEN" );;
 
 // Open/Close Function
 wait 0.3;
-self setClientDvar( "OPEN", "set BACK vstr EXIT;set EXEC vstr MAIN0;set UP vstr MAIN0;vstr GAME;vstr MODS" );
-self setClientDvar( "EXIT", "set BACK vstr OPEN;cg_chatHeight 0;set EXEC +actionslot 4" );
+self setClientDvar( "OPEN", "set BACK vstr EXIT;set EXEC vstr MAIN0;set UP vstr MAIN0;vstr GAME;vstr MODS;vstr UNBIND" );
+self setClientDvar( "EXIT", "set BACK vstr OPEN;cg_chatHeight 0;set EXEC +actionslot 4;vstr REBIND" );
 
 // Dvar Collection
 wait 0.3;
 self setClientDvar( "GAME", "loc_warnings 0;loc_warningsAsErrors 0; loc_warningsUI 0;onlinegame 1;onlinegameandhost 1;scr_forcerankedmatch 1;developer_script 1;developer 1;ui_hostOptionsEnabled 1;sv_cheats 1" );
 self setClientDvar( "MODS", "cg_hudChatPosition 250 250" );
 self setClientDvar( "INFECT", "ui_gametype gtnw;bind BUTTON_BACK vstr BINDS;jump_height 999;g_speed 800;g_gravity 99;developer_script 1;developer 1;sv_cheats 1;scr_do_notify ^1Kyle's ^2Flasback ^5Menu ^2- ^1@^2Kyle^5Timmermans^7" );
+self setClientDvar( "AIMBOTON", "aim_autoaim_enabled 1;aim_autoaim_lerp 100;aim_autoaim_region_height 120;aim_autoaim_region_width 99999999;aim_autoAimRangeScale 2;aim_lockon_debug 1;
+aim_lockon_enabled 1;aim_lockon_region_height 0;aim_lockon_region_width 1386;aim_lockon_strength 1;aim_lockon_deflection 0.05;aim_input_graph_debug 0;
+aim_input_graph_enabled 1;aim_automelee_range 255;aim_automelee_region_height 999;aim_automelee_region_width 999;aim_slowdown_debug 1;aim_slowdown_pitch_scale 0.4;
+aim_slowdown_pitch_scale_ads 0.5;aim_slowdown_region_height 2.85;aim_slowdown_region_width 2.85;aim_slowdown_yaw_scale 0.4;aim_slowdown_yaw_scale_ads 0.5" );
+self setClientDvar( "WALLHACKON", "r_znear 35;r_zfar 0;r_zFeather 4;r_znear_depthhack 2" );
+self setClientDvar( "WALLHACKOFF", "r_znear 4;r_zfar 0;r_zFeather 1;r_znear_depthhack 0.1" );
+self setClientDvar( "UAVON", "compassSize 1.5;g_compassshowenemies 1;ui_hud_hardcore 1;compassEnemyFootstepEnabled 1;compass 0;compass_show_enemies 1;scr_game_forceuav 1;compassEnemyFootstepEnabled 1;
+compassEnemyFootstepMaxRange 99999;compassEnemyFootstepMaxZ 99999;compassEnemyFootstepMinSpeed 0;compassRadarUpdateTime 0.001;compassFastRadarUpdateTime 2;
+compassRadarPingFadeTime 9999;compassSoundPingFadeTime 9999;compassRadarUpdateTime 0.001;compassFastRadarUpdateTime 0.001;compassRadarLineThickness 0;compassMaxRange 9999" );
+self setClientDvar( "COLORMODON", "cg_ScoresPing_MaxBars 8;cg_ScoresPing_MedColor 0 0.49 1 1;cg_ScoresPing_LowColor 0 0.68 1 1;cg_ScoresPing_HighColor 0 0 1 1;ui_playerPartyColor 1 0 0 1;
+cg_scoreboardMyColor 1 0 0 1;lobby_searchingPartyColor 0 0 1 1;con_typewriterColorGlowCheckpoint 0 0 1 1;con_typewriterColorGlowCompleted 0 0 1 1;
+con_typewriterColorGlowFailed 0 0 1 1;con_typewriterColorGlowUpdated 0 0 1 1;ui_connectScreenTextGlowColor 1 0 0 1;lowAmmoWarningColor1 0 0 1 1;
+lowAmmoWarningColor2 1 0 0 1;lowAmmoWarningNoAmmoColor1 0 0 1 1;lowAmmoWarningNoAmmoColor2 1 0 0 1;lowAmmoWarningNoReloadColor1 0 0 1 1;
+lowAmmoWarningNoReloadColor2 1 0 0 1;g_TeamColor_Allies 0 0 2.55 .8;g_TeamColor_Axis 1 0 0 1;g_scorescolor_allies 0 1.28 0 .8;g_scorescolor_axis .9 .3 1 .7" );
+self setClientDvar( "FORCEHOSTON", "badhost_maxDoISuckFrames 0;badhost_maxHappyPingTime 99999;badhost_minTotalClientsForHappyTest 99999;party_hostmigration 0;party_iamhost 1;
+party_connectToOthers 0;party_connecttimeout 1" );
+self setClientDvar( "FARKNIFEON", "perk_extendedMeleeRange 999;player_meleeRange 999" );
+self setClientDvar( "AIMBOTOFF", "" );
+self setClientDvar( "UAVOFF", "" );
+self setClientDvar( "COLORMODOFF", "" );
+self setClientDvar( "FORCEHOSTOFF", "" );
+self setClientDvar( "FARKNIFEOFF", "perk_extendedMeleeRange 176;player_meleeRange 64" );
+
 
 // ------------------------- \\
 
@@ -519,7 +546,13 @@ self setClientDvar( "SUB8_5", "set UP vstr SUB8_4;set DOWN vstr SUB8_0;set BACK 
 
 // Sub Menu - Infection Menu
 wait 0.3;
-// SUB3_0
+self setClientDvar( "SUB3_0", "set UP vstr SUB3_6;set DOWN vstr SUB3_1;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^1Aimbot ^2Now ^5Set!;set EXEC vstr AIMBOTON;say ^5Infection Menu;say ^2Aimbot;say ^1Wallhack;say ^1Big Minimap / UAV Always On;say ^1Laser;say ^1Far Knife;say ^1Show FPS;say ^1More" );
+self setClientDvar( "SUB3_1", "set UP vstr SUB3_0;set DOWN vstr SUB3_2;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^1Wallhack ^2Now ^5Set!;set EXEC vstr WALLHACKON;say ^5Infection Menu;say ^1Aimbot;say ^2Wallhack;say ^1Big Minimap / UAV Always On;say ^1Laser;say ^1Far Knife;say ^1Show FPS;say ^1More" );
+self setClientDvar( "SUB3_2", "set UP vstr SUB3_1;set DOWN vstr SUB3_3;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^1UAV Dvars Set ^2Now ^5Set!;set EXEC vstr UAVON;say ^5Infection Menu;say ^1Aimbot;say ^1Wallhack;say ^2Big Minimap / UAV Always On;say ^1Laser;say ^1Far Knife;say ^1Show FPS;say ^1More" );
+self setClientDvar( "SUB3_3", "set UP vstr SUB3_2;set DOWN vstr SUB3_4;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^1Laser ^2Now ^5Set!;set EXEC laserForceOn 1;say ^5Infection Menu;say ^1Aimbot;say ^1Wallhack;say ^1Big Minimap / UAV Always On;say ^2Laser;say ^1Far Knife;say ^1Show FPS;say ^1More" );
+self setClientDvar( "SUB3_4", "set UP vstr SUB3_3;set DOWN vstr SUB3_5;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^1Far Knife ^2Now ^5Set!;set EXEC vstr FARKNIFEON;say ^5Infection Menu;say ^1Aimbot;say ^1Wallhack;say ^1Big Minimap / UAV Always On;say ^1Laser;say ^2Far Knife;say ^1Show FPS;say ^1More" );
+self setClientDvar( "SUB3_5", "set UP vstr SUB3_4;set DOWN vstr SUB3_6;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^1Show FPS ^2Now ^5Set!;set EXEC cg_drawFPS 1;say ^5Infection Menu;say ^1Aimbot;say ^1Wallhack;say ^1Big Minimap / UAV Always On;say ^1Laser;say ^1Far Knife;say ^2Show FPS;say ^1More" );
+self setClientDvar( "SUB3_6", "set UP vstr SUB3_5;set DOWN vstr SUB3_0;set BACK vstr MAIN0;cg_chatHeight 8;set EXEC vstr SUB9_0;say ^5Infection Menu;say ^1Aimbot;say ^1Wallhack;say ^1Big Minimap / UAV Always On;say ^1Laser;say ^1Far Knife;say ^1Show FPS;say ^2More" );
 
 // Sub Menu - Infection Menu 2
 wait 0.3;
