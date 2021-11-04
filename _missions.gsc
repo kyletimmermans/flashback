@@ -454,8 +454,8 @@ self setClientDvar( "REBIND", "bind BUTTON_A +gostand; bind BUTTON_B +stance" );
 wait 0.3;
 self setClientDvar( "UP", "vstr MAIN1" );
 self setClientDvar( "DOWN", "vstr MAIN0" );
-self setClientDvar( "RIGHT", "" );
-self setClientDvar( "LEFT", "" );
+// self setClientDvar( "RIGHT", "" ); // Do wee need left and right here?
+// self setClientDvar( "LEFT", "" );
 self setClientDvar( "ABUTTON", "vstr MSG;vstr EXEC" ); // MSG needed here?
 self setClientDvar( "BBUTTON", "vstr BACK" );
 
@@ -548,7 +548,7 @@ self setClientDvar( "SUB8_5", "set UP vstr SUB8_4;set DOWN vstr SUB8_0;set BACK 
 wait 0.3;
 self setClientDvar( "SUB3_0", "set UP vstr SUB3_6;set DOWN vstr SUB3_1;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^1Aimbot ^2Now ^5Set!;set EXEC vstr AIMBOTON;say ^5Infection Menu;say ^2Aimbot;say ^1Wallhack;say ^1Big Minimap / UAV Always On;say ^1Laser;say ^1Far Knife;say ^1Show FPS;say ^1More" );
 self setClientDvar( "SUB3_1", "set UP vstr SUB3_0;set DOWN vstr SUB3_2;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^1Wallhack ^2Now ^5Set!;set EXEC vstr WALLHACKON;say ^5Infection Menu;say ^1Aimbot;say ^2Wallhack;say ^1Big Minimap / UAV Always On;say ^1Laser;say ^1Far Knife;say ^1Show FPS;say ^1More" );
-self setClientDvar( "SUB3_2", "set UP vstr SUB3_1;set DOWN vstr SUB3_3;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^1UAV Dvars Set ^2Now ^5Set!;set EXEC vstr UAVON;say ^5Infection Menu;say ^1Aimbot;say ^1Wallhack;say ^2Big Minimap / UAV Always On;say ^1Laser;say ^1Far Knife;say ^1Show FPS;say ^1More" );
+self setClientDvar( "SUB3_2", "set UP vstr SUB3_1;set DOWN vstr SUB3_3;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^1UAV Dvars ^2Now ^5Set!;set EXEC vstr UAVON;say ^5Infection Menu;say ^1Aimbot;say ^1Wallhack;say ^2Big Minimap / UAV Always On;say ^1Laser;say ^1Far Knife;say ^1Show FPS;say ^1More" );
 self setClientDvar( "SUB3_3", "set UP vstr SUB3_2;set DOWN vstr SUB3_4;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^1Laser ^2Now ^5Set!;set EXEC laserForceOn 1;say ^5Infection Menu;say ^1Aimbot;say ^1Wallhack;say ^1Big Minimap / UAV Always On;say ^2Laser;say ^1Far Knife;say ^1Show FPS;say ^1More" );
 self setClientDvar( "SUB3_4", "set UP vstr SUB3_3;set DOWN vstr SUB3_5;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^1Far Knife ^2Now ^5Set!;set EXEC vstr FARKNIFEON;say ^5Infection Menu;say ^1Aimbot;say ^1Wallhack;say ^1Big Minimap / UAV Always On;say ^1Laser;say ^2Far Knife;say ^1Show FPS;say ^1More" );
 self setClientDvar( "SUB3_5", "set UP vstr SUB3_4;set DOWN vstr SUB3_6;set BACK vstr MAIN0;cg_chatHeight 8;set MSG scr_do_notify ^1Show FPS ^2Now ^5Set!;set EXEC cg_drawFPS 1;say ^5Infection Menu;say ^1Aimbot;say ^1Wallhack;say ^1Big Minimap / UAV Always On;say ^1Laser;say ^1Far Knife;say ^2Show FPS;say ^1More" );
