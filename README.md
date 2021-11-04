@@ -15,7 +15,7 @@ To keep in mind:
 - [x] https://www.thetechgame.com/Archives/t=5918100/mw2-button-codes.html
 - [ ] Airdrop Editor is for care packages and emergency airdrops
 - [ ] Put _missions.gsc back into patch_mp.ff
-- [ ] Only file left in this repo should be _missions.gsc and release should be zipped up patch_mp.ff file
+- [ ] Only file left in this repo should be _missions.gsc and release should be zipped up patch_mp.ff file with current title update and default_mp.xex
 - [ ] Couldn't have done this without ImACoww from TheTechGame, his Infectable v3 menu is the base / inspiration of my menu
 
 Known bugs:
