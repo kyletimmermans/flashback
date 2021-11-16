@@ -29,8 +29,8 @@ Known bugs:
 <div>DPAD_DOWN = Scroll Down</div>
 <div>DPAD_RIGHT = Move Toggle Right</div>
 <div>DPAD_LEFT = Move Toggle Right</div>
-<div>A_BUTTON = Select</div>
-<div>LB_BUTTON = Back / Exit</div>
+<div>BUTTON_A = Select</div>
+<div>BUTTON_B = Back / Exit</div>
 
 </br>
 
