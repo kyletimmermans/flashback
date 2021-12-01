@@ -5,7 +5,7 @@
 
 # <div align="center">Flashback</div>
 
-<div align="center">MW2 Mod Menu for Xbox360 with a Button Bind Era Look and Implementation</div>
+<div align="center">MW2 Mod Menu (TU6) for Xbox360 with a Button Bind Era Look and Implementation</div>
 
 </br>
 
