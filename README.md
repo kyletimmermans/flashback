@@ -53,6 +53,7 @@ Player Menu:
 _____________
 
 ToDo:
+- [ ] Remove scr_do_notify incorrect msg from Fun Menu, check other menus for similar issue
 - [ ] Do Infection Menus
 - [ ] Fix GSC functions not working
 - [x] Unbind A and B everytime we open menu and bind them to EXEC and BACK so they can be our new select and back button for the menu. Rebind them on menu exit. Also change dpad right and left to be the toggle switches.
