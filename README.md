@@ -59,4 +59,5 @@ ToDo:
 - [x] Unbind A and B everytime we open menu and bind them to EXEC and BACK so they can be our new select and back button for the menu. Rebind them on menu exit. Also change dpad right and left to be the toggle switches.
 - [ ] Add Toggles, even for gsc functions (Fun Menu, Game Menu, Infection Menu, Freeze All)
 - [ ] Test everything to make sure it works
+- [ ] Make an IW4X version for those w/o JTAG/RGH
 - [ ] Release
