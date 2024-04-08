@@ -95,7 +95,11 @@
 - [x] Map Menu
   - [x] Rust
   - [x] Terminal
-  - [x] 
+  - [x] Highrise
+  - [x] Estate
+  - [x] Karachi
+  - [x] Skidrow
+  - [x] Scrapyard
 - [x] Game Menu
   - [x] Toggle Jump Height [999 0 Default]
   - [x] Toggle Gravity [99 1 999 Default]
