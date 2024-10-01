@@ -1,6 +1,6 @@
 ![Version 1.0](https://img.shields.io/badge/Version-1.0-orange.svg)
 ![IW4.0 Engine - GSC](https://img.shields.io/badge/IW4.0_Engine-GSC-blue.svg)
-![Last Updated](https://img.shields.io/github/last-commit/kyletimmermans/flashback?color=success&label=Last%20Updated)
+![Last Commit](https://img.shields.io/github/last-commit/kyletimmermans/flashback?color=success&label=Last%20Commit)
 [![kyletimmermans Twitter](http://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Follow)](https://twitter.com/kyletimmermans)
 
 # <div align="center">Flashback</div>
