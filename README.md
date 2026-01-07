@@ -155,3 +155,16 @@
 | At the beginning of every game, there will be about 3-4 seconds of lag just because it's loading a lot of Dvars |
 | There are more instructions on how to load the menu in the README in the release download folder |
 | Menu base thanks to Coww from TTG |
+
+</br>
+
+## How Does It All Work?
+
+### The Mod Menu:
+Each option in the menu has a collection of pointers associated with each of the DPAD buttons. Starting from the "Main Menu" and "Player Menu". Each of these pointers will point to another menu option e.g. when on the Main Menu option, DPAD_DOWN points to the Player Menu, and when on Player Menu, DPAD_UP points to the Main Menu. So when you move throughout the menu, you are constantly moving along the pointer paths that point to other options and rebinding the DPAD buttons. And when you move to a given menu item, the menu is redrawn on the screen to make the selected item one color, and the rest of the other menu options another single color, to indicate which option you are currently on. Finally, each menu item is binded to a specific function that allows you to run it, e.g. DPAD_RIGHT to infinite_ammo() or noclip().
+
+### Binds Infection:
+How can we pass on the infection to other players that don't have a modified console so that they can also use it? The modder with the modified console will set their name to the actual code of the menu, e.g. instead of the map being just something like mp_rust, it will be now be mp_rust; init infection… This works like an injection attack, since you can actually load that map name and it will load the map you specified, as well as load and run the code after the semi colon. The modder will then sit in a private lobby with their map set to: map name + code. It will show some of the code where the preview of the map would be, and the game doesn't have an image of this map since map name + code is not recognized by the game, so it sets it to a checkerboard pattern. Now, someone can join this lobby, back out, start their own game, and since MW2 will set your new lobby map to be the map of the last lobby you were in, it carries over to your lobby. So you got the code into the map name without needing to have a modded console. Start the game without changing the map, and voila, the code from the map name will execute and you'll have the mod menu.
+
+### Modified default_mp.xex:
+I honestly can't remember exactly how I removed the restrictions since I made this a few years ago, but I’m pretty sure it went something like this: Get the vanilla TU6 default_mp.xex file online, decompile it with IDA Pro and the [idaxex plugin](https://github.com/emoose/idaxex) ([emoose](https://github.com/emoose)), find all the security checks, replace and patch them with nop instructions, then recompile. It was a lot of trial and error, lots of crashing my console lol.
